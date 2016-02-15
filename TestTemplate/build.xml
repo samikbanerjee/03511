@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- authored for execution of automated tests -->
+<project basedir="." default="build">
+	 <property file="project.properties"/>
+	 <property name="webdriver.location" location="${selectbrowser.driver.path}"/> 
+	 <property environment="env"/>
+	 <property name="target" value="1.7"/>
+    <property name="source" value="1.7"/>
+	 <property name="debuglevel" value="source,lines,vars"/>
+    <path id="classpath">
+        <pathelement location="bin"/>
+        <pathelement location="TestFrameworkLibs/Automation_Libs-0.0.2-SNAPSHOT.jar"/>
+        <pathelement location="TestFrameworkLibs/cglib-nodep-2.1_3.jar"/>
+        <pathelement location="TestFrameworkLibs/commons-codec-1.9.jar"/>
+        <pathelement location="TestFrameworkLibs/commons-collections-3.2.1.jar"/>
+        <pathelement location="TestFrameworkLibs/commons-exec-1.1.jar"/>
+        <pathelement location="TestFrameworkLibs/commons-io-2.4.jar"/>
+        <pathelement location="TestFrameworkLibs/commons-lang3-3.3.2.jar"/>
+        <pathelement location="TestFrameworkLibs/commons-logging-1.2.jar"/>
+        <pathelement location="TestFrameworkLibs/cssparser-0.9.14.jar"/>
+        <pathelement location="TestFrameworkLibs/gson-2.3.1.jar"/>
+        <pathelement location="TestFrameworkLibs/guava-18.0.jar"/>
+        <pathelement location="TestFrameworkLibs/hamcrest-core-1.3.jar"/>
+        <pathelement location="TestFrameworkLibs/htmlunit-2.15.jar"/>
+        <pathelement location="TestFrameworkLibs/htmlunit-core-js-2.15.jar"/>
+        <pathelement location="TestFrameworkLibs/httpclient-4.4.1.jar"/>
+        <pathelement location="TestFrameworkLibs/httpcore-4.4.1.jar"/>
+        <pathelement location="TestFrameworkLibs/httpmime-4.3.3.jar"/>
+        <pathelement location="TestFrameworkLibs/jetty-http-8.1.15.v20140411.jar"/>
+        <pathelement location="TestFrameworkLibs/jetty-io-8.1.15.v20140411.jar"/>
+        <pathelement location="TestFrameworkLibs/jetty-util-8.1.15.v20140411.jar"/>
+        <pathelement location="TestFrameworkLibs/jetty-websocket-8.1.15.v20140411.jar"/>
+        <pathelement location="TestFrameworkLibs/jna-3.4.0.jar"/>
+        <pathelement location="TestFrameworkLibs/junit-4.12.jar"/>
+        <pathelement location="TestFrameworkLibs/nekohtml-1.9.21.jar"/>
+        <pathelement location="TestFrameworkLibs/netty-3.5.2.Final.jar"/>
+        <pathelement location="TestFrameworkLibs/opencsv-3.3.jar"/>
+        <pathelement location="TestFrameworkLibs/platform-3.4.0.jar"/>
+        <pathelement location="TestFrameworkLibs/poi-3.11.jar"/>
+        <pathelement location="TestFrameworkLibs/poi-ooxml-3.11.jar"/>
+        <pathelement location="TestFrameworkLibs/poi-ooxml-schemas-3.11.jar"/>
+        <pathelement location="TestFrameworkLibs/sac-1.3.jar"/>
+        <pathelement location="TestFrameworkLibs/selenium-api-2.45.0.jar"/>
+        <pathelement location="TestFrameworkLibs/selenium-chrome-driver-2.45.0.jar"/>
+        <pathelement location="TestFrameworkLibs/selenium-firefox-driver-2.45.0.jar"/>
+        <pathelement location="TestFrameworkLibs/selenium-htmlunit-driver-2.45.0.jar"/>
+        <pathelement location="TestFrameworkLibs/selenium-ie-driver-2.45.0.jar"/>
+        <pathelement location="TestFrameworkLibs/selenium-java-2.45.0.jar"/>
+        <pathelement location="TestFrameworkLibs/selenium-leg-rc-2.45.0.jar"/>
+        <pathelement location="TestFrameworkLibs/selenium-remote-driver-2.45.0.jar"/>
+        <pathelement location="TestFrameworkLibs/selenium-safari-driver-2.45.0.jar"/>
+        <pathelement location="TestFrameworkLibs/selenium-support-2.45.0.jar"/>
+        <pathelement location="TestFrameworkLibs/serializer-2.7.1.jar"/>
+        <pathelement location="TestFrameworkLibs/stax-api-1.0.1.jar"/>
+        <pathelement location="TestFrameworkLibs/TestFrameworkLibs.jar"/>
+        <pathelement location="TestFrameworkLibs/webbit-0.4.14.jar"/>
+        <pathelement location="TestFrameworkLibs/xalan-2.7.1.jar"/>
+        <pathelement location="TestFrameworkLibs/xercesImpl-2.11.0.jar"/>
+        <pathelement location="TestFrameworkLibs/xml-apis-1.4.01.jar"/>
+        <pathelement location="TestFrameworkLibs/xmlbeans-2.6.0.jar"/>
+    	<pathelement location="TestFrameworkLibs/apache-log4j-2.3-bin/apache-log4j-2.3-bin/log4j-core-2.3.jar"/>
+    	 <pathelement location="TestFrameworkLibs/apache-log4j-2.3-bin/apache-log4j-2.3-bin/log4j-api-2.3.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="resources">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <src path="resources"/>
+       		<classpath refid="classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target name="TestSuite">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+        	<formatter type="xml"/>
+        	<sysproperty key="browserName" value="${selectbrowser.name}"/>
+        	<sysproperty key="driverPath" value="${webdriver.location}"/>
+        	<batchtest todir="${junit.output.dir}">
+        		<fileset dir="${testclass.dir}">
+        			<include name="**/${testclass.pattern}*.class" />
+        		</fileset>
+        	</batchtest>
+         	<classpath refid="classpath"/>
+        </junit>
+    </target>
+    <target name="junitreport">
+        <junitreport todir="${junit.output.dir}">
+            <fileset dir="${junit.output.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${junit.output.dir}">
+            	<param name="TITLE" expression="${test.report.title}"/>
+        		</report>
+        </junitreport>
+    </target>
+</project>
