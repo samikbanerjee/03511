@@ -1,7 +1,9 @@
 package org.test;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.test.tools.SetBrowser;
 
 
 /**
@@ -10,14 +12,16 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class Aexec
 {
 	private static final String url = "http://www.google.com";
+	private static final String browser = "chrome";
 
 	/**
 	 * @param args
 	 * @throws InterruptedException
+	 * @throws IOException
 	 */
-	public static void main(final String[] args) throws InterruptedException
+	public static void main(final String[] args) throws InterruptedException, IOException
 	{
-		final WebDriver _dr = new FirefoxDriver();
+		final WebDriver _dr = SetBrowser.WebDriver(browser);
 		_dr.get(url);
 		Thread.sleep(5000);
 		_dr.quit();
