@@ -2,7 +2,6 @@
 <!-- authored for execution of automated tests -->
 <project basedir="." default="build" >
 	 <property file="project.properties"/>
-	 <property name="webdriver.location" location="${selectbrowser.driver.path}"/> 
 	 <property environment="env"/>
 	 <property name="target" value="1.7"/>
     <property name="source" value="1.7"/>

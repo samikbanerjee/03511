@@ -12,7 +12,7 @@ import org.test.tools.SetBrowser;
 public class Aexec
 {
 	private static final String url = "http://www.google.com";
-	private static final String browser = "chrome";
+
 
 	/**
 	 * @param args
@@ -21,7 +21,7 @@ public class Aexec
 	 */
 	public static void main(final String[] args) throws InterruptedException, IOException
 	{
-		final WebDriver _dr = SetBrowser.WebDriver(browser);
+		final WebDriver _dr = SetBrowser.WebDriver("firefox");
 		_dr.get(url);
 		Thread.sleep(5000);
 		_dr.quit();
