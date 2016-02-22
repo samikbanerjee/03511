@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- authored for execution of automated tests -->
+<project basedir="." default="build" >
+	 <property file="project.properties"/>
+	 <property name="webdriver.location" location="${selectbrowser.driver.path}"/> 
+	 <property environment="env"/>
+	 <property name="target" value="1.7"/>
+    <property name="source" value="1.7"/>
+	 <property name="debuglevel" value="source,lines,vars"/>
+    <path id="classpath">
+        <pathelement location="bin"/>
+        <pathelement location="automation_libs/cglib-nodep-2.1_3.jar"/>
+        <pathelement location="automation_libs/commons-codec-1.9.jar"/>
+        <pathelement location="automation_libs/commons-collections-3.2.2.jar"/>
+        <pathelement location="automation_libs/commons-exec-1.3.jar"/>
+        <pathelement location="automation_libs/commons-io-2.4.jar"/>
+        <pathelement location="automation_libs/commons-lang3-3.4.jar"/>
+        <pathelement location="automation_libs/commons-logging-1.2.jar"/>
+        <pathelement location="automation_libs/cssparser-0.9.16.jar"/>
+        <pathelement location="automation_libs/gson-2.3.1.jar"/>
+        <pathelement location="automation_libs/guava-19.0.jar"/>
+        <pathelement location="automation_libs/hamcrest-core-1.3.jar"/>
+        <pathelement location="automation_libs/htmlunit-2.18.jar"/>
+        <pathelement location="automation_libs/htmlunit-core-js-2.17.jar"/>
+        <pathelement location="automation_libs/httpclient-4.5.1.jar"/>
+        <pathelement location="automation_libs/httpcore-4.4.4.jar"/>
+        <pathelement location="automation_libs/httpmime-4.5.jar"/>
+        <pathelement location="automation_libs/jetty-io-9.2.12.v20150709.jar"/>
+        <pathelement location="automation_libs/jetty-util-9.2.12.v20150709.jar"/>
+        <pathelement location="automation_libs/jna-4.1.0.jar"/>
+        <pathelement location="automation_libs/jna-platform-4.1.0.jar"/>
+        <pathelement location="automation_libs/junit-4.12.jar"/>
+        <pathelement location="automation_libs/log4j-api-2.5.jar"/>
+        <pathelement location="automation_libs/log4j-core-2.5.jar"/>
+        <pathelement location="automation_libs/nekohtml-1.9.22.jar"/>
+        <pathelement location="automation_libs/netty-3.5.2.Final.jar"/>
+        <pathelement location="automation_libs/poi-3.13.jar"/>
+        <pathelement location="automation_libs/poi-ooxml-3.13.jar"/>
+        <pathelement location="automation_libs/poi-ooxml-schemas-3.13.jar"/>
+        <pathelement location="automation_libs/sac-1.3.jar"/>
+        <pathelement location="automation_libs/selenium-api-2.52.0.jar"/>
+        <pathelement location="automation_libs/selenium-chrome-driver-2.52.0.jar"/>
+        <pathelement location="automation_libs/selenium-edge-driver-2.52.0.jar"/>
+        <pathelement location="automation_libs/selenium-firefox-driver-2.52.0.jar"/>
+        <pathelement location="automation_libs/selenium-htmlunit-driver-2.52.0.jar"/>
+        <pathelement location="automation_libs/selenium-ie-driver-2.52.0.jar"/>
+        <pathelement location="automation_libs/selenium-java-2.52.0.jar"/>
+        <pathelement location="automation_libs/selenium-leg-rc-2.52.0.jar"/>
+        <pathelement location="automation_libs/selenium-remote-driver-2.52.0.jar"/>
+        <pathelement location="automation_libs/selenium-safari-driver-2.52.0.jar"/>
+        <pathelement location="automation_libs/selenium-support-2.52.0.jar"/>
+        <pathelement location="automation_libs/serializer-2.7.2.jar"/>
+        <pathelement location="automation_libs/stax-api-1.0.1.jar"/>
+        <pathelement location="automation_libs/super-csv-2.4.0.jar"/>
+        <pathelement location="automation_libs/webbit-0.4.14.jar"/>
+        <pathelement location="automation_libs/websocket-api-9.2.12.v20150709.jar"/>
+        <pathelement location="automation_libs/websocket-client-9.2.12.v20150709.jar"/>
+        <pathelement location="automation_libs/websocket-common-9.2.12.v20150709.jar"/>
+        <pathelement location="automation_libs/xalan-2.7.2.jar"/>
+        <pathelement location="automation_libs/xercesImpl-2.11.0.jar"/>
+        <pathelement location="automation_libs/xml-apis-1.4.01.jar"/>
+        <pathelement location="automation_libs/xmlbeans-2.6.0.jar"/>
+        <pathelement location="automation_libs/opencsv-3.7.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="drivers">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="resources">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <src path="drivers"/>
+            <src path="resources"/>
+            <classpath refid="AutomationTestTemplate.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="TestSuite">
+       <mkdir dir="${junit.output.dir}"/>
+       <junit fork="yes" printsummary="withOutAndErr">
+       	<formatter type="xml"/>
+       	<sysproperty key="browserName" value="${selectbrowser.name}"/>
+       	<sysproperty key="driverPath" value="${webdriver.location}"/>
+       	<batchtest todir="${junit.output.dir}">
+       		<fileset dir="${testclass.dir}">
+       			<include name="**/${testclass.pattern}*.class" />
+       		</fileset>
+       	</batchtest>
+        	<classpath refid="classpath"/>
+       </junit>
+    </target>
+    <target name="junitreport">
+       <junitreport todir="${junit.output.dir}">
+           <fileset dir="${junit.output.dir}">
+               <include name="TEST-*.xml"/>
+           </fileset>
+           <report format="frames" todir="${junit.output.dir}">
+           	<param name="TITLE" expression="${test.report.title}"/>
+       		</report>
+       </junitreport>
+    </target>
+</project>

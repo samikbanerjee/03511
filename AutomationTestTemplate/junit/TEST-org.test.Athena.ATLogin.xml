@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="Samik-PC" name="org.test.Athena.ATLogin" skipped="0" tests="1" time="37.266" timestamp="2016-02-22T21:33:27">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="env.MOZ_PLUGIN_PATH" value="C:\Program Files (x86)\Foxit Software\Foxit Reader\plugins\" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="env.PROMPT" value="$P$G" />
+    <property name="testclass.dir" value="bin" />
+    <property name="os.name" value="Windows 7" />
+    <property name="env.FP_NO_HOST_CHECK" value="NO" />
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_45\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_45\jre\classes" />
+    <property name="env.COMPUTERNAME" value="SAMIK-PC" />
+    <property name="env.CommonProgramW6432" value="C:\Program Files\Common Files" />
+    <property name="browserName" value="chrome" />
+    <property name="env.ALLUSERSPROFILE" value="C:\ProgramData" />
+    <property name="sun.desktop" value="windows" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="E:\Samik\git\03511\AutomationTestTemplate\apache-ant-1.9.1" />
+    <property name="java.runtime.version" value="1.8.0_45-b14" />
+    <property name="selectbrowser.name" value="chrome" />
+    <property name="env.HOMEPATH" value="\Users\Samik" />
+    <property name="user.name" value="Samik" />
+    <property name="driverPath" value="E:\Samik\git\03511\AutomationTestTemplate\webdrivers" />
+    <property name="user.language" value="en" />
+    <property name="env.windows_tracing_flags" value="3" />
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_45\jre\bin" />
+    <property name="ant.project.default-target" value="build" />
+    <property name="webdriver.location" value="E:\Samik\git\03511\AutomationTestTemplate\webdrivers" />
+    <property name="java.version" value="1.8.0_45" />
+    <property name="env.PROCESSOR_IDENTIFIER" value="Intel64 Family 6 Model 60 Stepping 3, GenuineIntel" />
+    <property name="user.timezone" value="America/Los_Angeles" />
+    <property name="env.TEMP" value="C:\Users\Samik\AppData\Local\Temp" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_45\jre\lib\endorsed" />
+    <property name="env._JAVACMD" value="C:\Program Files\Java\jdk1.8.0_45\bin\java.exe" />
+    <property name="sun.cpu.isalist" value="amd64" />
+    <property name="env.HOMEDRIVE" value="C:" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="\" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="52.0" />
+    <property name="user.country" value="US" />
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_45\jre" />
+    <property name="env.PSModulePath" value="C:\Windows\system32\WindowsPowerShell\v1.0\Modules\" />
+    <property name="env.APPDATA" value="C:\Users\Samik\AppData\Roaming" />
+    <property name="env.PUBLIC" value="C:\Users\Public" />
+    <property name="env.windows_tracing_logfile" value="C:\BVTBin\Tests\installpackage\csilogfile.log" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="env.ComSpec" value="C:\Windows\system32\cmd.exe" />
+    <property name="env.OS" value="Windows_NT" />
+    <property name="env.CommonProgramFiles" value="C:\Program Files\Common Files" />
+    <property name="ant.file" value="E:\Samik\git\03511\AutomationTestTemplate\build.xml" />
+    <property name="os.version" value="6.1" />
+    <property name="env.ProgramW6432" value="C:\Program Files" />
+    <property name="env._USE_CLASSPATH" value="no" />
+    <property name="env.=::" value="::\" />
+    <property name="path.separator" value=";" />
+    <property name="java.vm.version" value="25.45-b02" />
+    <property name="env.USERPROFILE" value="C:\Users\Samik" />
+    <property name="user.variant" value="" />
+    <property name="ant.library.dir" value="E:\Samik\git\03511\AutomationTestTemplate\apache-ant-1.9.1\lib" />
+    <property name="junit.output.dir" value="junit" />
+    <property name="env.JAVA_HOME" value="C:\Program Files\Java\jdk1.8.0_45" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="env.TMP" value="C:\Users\Samik\AppData\Local\Temp" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="test.report.title" value="!!!My Project Name Goes in Here!!!" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="sun.stdout.encoding" value="cp437" />
+    <property name="user.script" value="" />
+    <property name="user.home" value="C:\Users\Samik" />
+    <property name="target" value="1.7" />
+    <property name="env.ProgramData" value="C:\ProgramData" />
+    <property name="env.SESSIONNAME" value="Console" />
+    <property name="env.ProgramFiles(x86)" value="C:\Program Files (x86)" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_45\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\Samik\git\03511\AutomationTestTemplate\apache-ant-1.9.1\bin;E:\Samik\git\03511\AutomationTestTemplate\apache-ant-1.9.1\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT??e?Mondition=Is64;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;E:\Maven\apache-maven-3.3.3\bin;." />
+    <property name="env.NUMBER_OF_PROCESSORS" value="4" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="testclass.pattern" value="AT" />
+    <property name="env.=E:" value="E:\Samik\git\03511\AutomationTestTemplate" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="java.class.path" value="E:\Samik\git\03511\AutomationTestTemplate\bin;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\cglib-nodep-2.1_3.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\commons-codec-1.9.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\commons-collections-3.2.2.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\commons-exec-1.3.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\commons-io-2.4.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\commons-lang3-3.4.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\commons-logging-1.2.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\cssparser-0.9.16.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\gson-2.3.1.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\guava-19.0.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\hamcrest-core-1.3.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\htmlunit-2.18.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\htmlunit-core-js-2.17.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\httpclient-4.5.1.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\httpcore-4.4.4.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\httpmime-4.5.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\jetty-io-9.2.12.v20150709.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\jetty-util-9.2.12.v20150709.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\jna-4.1.0.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\jna-platform-4.1.0.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\junit-4.12.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\log4j-api-2.5.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\log4j-core-2.5.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\nekohtml-1.9.22.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\netty-3.5.2.Final.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\poi-3.13.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\poi-ooxml-3.13.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\poi-ooxml-schemas-3.13.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\sac-1.3.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\selenium-api-2.52.0.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\selenium-chrome-driver-2.52.0.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\selenium-edge-driver-2.52.0.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\selenium-firefox-driver-2.52.0.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\selenium-htmlunit-driver-2.52.0.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\selenium-ie-driver-2.52.0.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\selenium-java-2.52.0.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\selenium-leg-rc-2.52.0.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\selenium-remote-driver-2.52.0.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\selenium-safari-driver-2.52.0.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\selenium-support-2.52.0.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\serializer-2.7.2.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\stax-api-1.0.1.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\super-csv-2.4.0.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\webbit-0.4.14.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\websocket-api-9.2.12.v20150709.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\websocket-client-9.2.12.v20150709.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\websocket-common-9.2.12.v20150709.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\xalan-2.7.2.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\xercesImpl-2.11.0.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\xml-apis-1.4.01.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\xmlbeans-2.6.0.jar;E:\Samik\git\03511\AutomationTestTemplate\automation_libs\opencsv-3.7.jar;E:\Samik\git\03511\AutomationTestTemplate\apache-ant-1.9.1\lib\ant-launcher.jar;E:\Samik\git\03511\AutomationTestTemplate\apache-ant-1.9.1\lib\ant.jar;E:\Samik\git\03511\AutomationTestTemplate\apache-ant-1.9.1\lib\ant-junit.jar;E:\Samik\git\03511\AutomationTestTemplate\apache-ant-1.9.1\lib\ant-junit4.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.1 compiled on May 15 2013" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner org.test.Athena.ATLogin filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,E:\Samik\git\03511\AutomationTestTemplate\junit\TEST-org.test.Athena.ATLogin.xml crashfile=E:\Samik\git\03511\AutomationTestTemplate\junitvmwatcher9048066616948662524.properties propsfile=E:\Samik\git\03511\AutomationTestTemplate\junit1073685069176842971.properties" />
+    <property name="env.ANT_OPTS" value="-Xmx200m -XX:MaxPermSize=128M" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.type" value="file" />
+    <property name="env.LOGONSERVER" value="\\SAMIK-PC" />
+    <property name="env.windir" value="C:\Windows" />
+    <property name="env.PROCESSOR_ARCHITECTURE" value="AMD64" />
+    <property name="java.vm.specification.version" value="1.8" />
+    <property name="sun.os.patch.level" value="Service Pack 1" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="debuglevel" value="source,lines,vars" />
+    <property name="env.ProgramFiles" value="C:\Program Files" />
+    <property name="env.ANT_HOME" value="E:\Samik\git\03511\AutomationTestTemplate\apache-ant-1.9.1" />
+    <property name="java.io.tmpdir" value="C:\Users\Samik\AppData\Local\Temp\" />
+    <property name="env.PROCESSOR_REVISION" value="3c03" />
+    <property name="env.CommonProgramFiles(x86)" value="C:\Program Files (x86)\Common Files" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="env.SystemRoot" value="C:\Windows" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="os.arch" value="amd64" />
+    <property name="env.ANT_CMD_LINE_ARGS" value=" TestSuite" />
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_45\jre\lib\ext;C:\Windows\Sun\Java\lib\ext" />
+    <property name="env.LOCALAPPDATA" value="C:\Users\Samik\AppData\Local" />
+    <property name="user.dir" value="E:\Samik\git\03511\AutomationTestTemplate" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="env.PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC" />
+    <property name="env.Path" value="E:\Samik\git\03511\AutomationTestTemplate\apache-ant-1.9.1\bin;E:\Samik\git\03511\AutomationTestTemplate\apache-ant-1.9.1\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT鱤翴e耀Mondition=Is64;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;E:\Maven\apache-maven-3.3.3\bin" />
+    <property name="basedir" value="E:\Samik\git\03511\AutomationTestTemplate" />
+    <property name="ant.java.version" value="1.8" />
+    <property name="ant.core.lib" value="E:\Samik\git\03511\AutomationTestTemplate\apache-ant-1.9.1\lib\ant.jar" />
+    <property name="env.USERNAME" value="Samik" />
+    <property name="source" value="1.7" />
+    <property name="env.SystemDrive" value="C:" />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="sun.stderr.encoding" value="cp437" />
+    <property name="env.USERDOMAIN" value="Samik-PC" />
+    <property name="selectbrowser.driver.path" value="webdrivers" />
+    <property name="java.specification.version" value="1.8" />
+    <property name="env.=C:" value="C:\Users\Samik" />
+    <property name="ant.project.invoked-targets" value="TestSuite" />
+    <property name="env.PROCESSOR_LEVEL" value="6" />
+    <property name="env.VBOX_MSI_INSTALL_PATH" value="C:\Program Files\Oracle\VirtualBox\" />
+  </properties>
+  <testcase classname="org.test.Athena.ATLogin" name="testATLogin" time="36.803" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
