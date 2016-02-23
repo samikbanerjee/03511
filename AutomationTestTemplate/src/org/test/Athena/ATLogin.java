@@ -4,6 +4,8 @@ import static org.junit.Assert.fail;
 
 import java.util.concurrent.TimeUnit;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -15,6 +17,7 @@ import org.openqa.selenium.WebDriver;
 import org.test.tools.SetBrowser;
 
 
+
 /**
  *
  */
@@ -24,6 +27,7 @@ public class ATLogin
 	private String baseUrl;
 	private boolean acceptNextAlert = true;
 	private final StringBuffer verificationErrors = new StringBuffer();
+	static Logger log = LogManager.getRootLogger();
 
 	/**
 	 * @throws Exception
@@ -31,7 +35,7 @@ public class ATLogin
 	@Before
 	public void setUp() throws Exception
 	{
-		driver = SetBrowser.WebDriver("chrome");
+		driver = SetBrowser.WebDriver("firefox");
 		baseUrl = "http://www.amway-qas.com.br/";
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
@@ -49,6 +53,7 @@ public class ATLogin
 		driver.findElement(By.xpath("//input[@id='j_password']")).clear();
 		driver.findElement(By.xpath("//input[@id='j_password']")).sendKeys("123456");
 		driver.findElement(By.xpath("//button[@id='login-checkout']")).click();
+		log.info("Successfully logged In");
 	}
 
 	/**
