@@ -35,7 +35,7 @@ public class ATLogin
 	@Before
 	public void setUp() throws Exception
 	{
-		driver = SetBrowser.WebDriver("firefox");
+		driver = SetBrowser.WebDriver("chrome");
 		baseUrl = "http://www.amway-qas.com.br/";
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
