@@ -18,9 +18,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 
 /**
- *
+ * @author Samik
  */
-public class MJB2CSmokeTestCases
+public class MJB2CUSSmokeTestCases
 {
 	private WebDriver driver;
 	private String baseUrl;
@@ -102,29 +102,6 @@ public class MJB2CSmokeTestCases
 		new MJB2CUSOpenForgotPasswordPage().testMJB2CUSOpenForgotPasswordPage(driver, baseUrl);
 	}
 
-
-
-	/**
-	 * <p>
-	 * Site : MJ B2C CA; Scenario - Registration
-	 * </p>
-	 *
-	 * @throws Exception
-	 */
-	//	@Test
-	//	public void testMJB2CCAReg() throws Exception
-	//	{
-	//		new MJB2CCAReg().testMJB2CCAReg(driver, baseUrl);
-	//	}
-
-
-	//TODO: Site: MJ B2C CA; Scenario - ForgotPasswordEmailSend
-
-	//TODO: Site: MJ B2C CA; Scenario - LoginValidUser
-
-	//TODO: Site: MJ B2C CA; Scenario - Logout
-
-	//TODO: Site: MJ B2C CA; Scenario - OpenForgotPasswordPage
 
 
 }
