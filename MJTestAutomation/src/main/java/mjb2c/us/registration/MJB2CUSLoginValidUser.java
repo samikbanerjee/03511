@@ -34,6 +34,7 @@ public class MJB2CUSLoginValidUser
 		driver.findElement(By.id("j_password")).sendKeys(CUST_PASS);
 		driver.findElement(By.cssSelector("input.cta-1")).click();
 		assertEquals("Sunglasses designed to change the way you see the world..", driver.getTitle());
+		Thread.sleep(2000);
 		driver.findElement(By.linkText("Logout")).click();
 	}
 

@@ -14,13 +14,16 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
+import tools.BaseTestCase;
 
 
 /**
  * @author Samik
  */
-public class MJB2CUSSmokeTestCases
+public class MJB2CUSSmokeTestCases extends BaseTestCase
 {
 	private WebDriver driver;
 	private String baseUrl;
@@ -32,8 +35,22 @@ public class MJB2CUSSmokeTestCases
 	@Before
 	public void setUp() throws Exception
 	{
-		driver = new FirefoxDriver();
-		baseUrl = "http://usmauijim.stg/";
+		//driver = new FirefoxDriver();
+		final DesiredCapabilities caps = DesiredCapabilities.chrome();
+		caps.setCapability("platform", "Windows 10");
+		caps.setCapability("version", "48.0");
+		caps.setCapability("screenResolution", "1280x1024");
+		caps.setCapability("name", name.getMethodName());
+		caps.setCapability("build", "MJB2CUSSmokeTestCases 03-14-2016 v2");
+		caps.setCapability("acceptSslCerts", "true");
+		caps.setCapability("tunnel-identifier", "MJConnection");
+
+
+		driver = new RemoteWebDriver(new java.net.URL("http://" + authentication.getUsername() + ":"
+				+ authentication.getAccessKey() + URL), caps);
+		this.sessionId = (((RemoteWebDriver) driver).getSessionId()).toString();
+
+		baseUrl = "http://usmauijim.stg";
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 

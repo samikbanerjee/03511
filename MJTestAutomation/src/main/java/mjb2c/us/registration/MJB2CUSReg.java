@@ -50,6 +50,7 @@ public class MJB2CUSReg
 		driver.findElement(By.id("register.checkPwd")).sendKeys(CUST_PASS);
 		driver.findElement(By.cssSelector("#registerSubmitButton > input.cta-1")).click();
 		assertEquals("Thank you for registering.", driver.findElement(By.cssSelector("div.alert-checkbalance")).getText());
+		Thread.sleep(2000);
 		driver.findElement(By.linkText("Logout")).click();
 
 	}

@@ -29,6 +29,7 @@ public class MJB2CUSForgotPasswordEmailSend
 		driver.findElement(By.linkText(COUNTRY_SELECTOR)).click();
 		driver.findElement(By.linkText("User")).click();
 		driver.findElement(By.linkText("FORGOT PASSWORD?")).click();
+		Thread.sleep(2000);
 		assertEquals("RESET PASSWORD", driver.findElement(By.cssSelector("div.reset-password-overlay-head > h2")).getText());
 		assertEquals("Email Address", driver.findElement(By.cssSelector("#forgottenPwdForm > div.form-group > label")).getText());
 		driver.findElement(By.id("forgottenPwd.email")).clear();
@@ -37,6 +38,7 @@ public class MJB2CUSForgotPasswordEmailSend
 		Thread.sleep(2000);
 		assertEquals("You have been sent an email with a link to change your password.", driver.findElement(By.id("validEmail"))
 				.getText());
+
 		driver.findElement(By.id("cboxClose")).click();
 	}
 }
