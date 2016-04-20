@@ -41,7 +41,7 @@ public class MJB2CUSSmokeTestCases extends BaseTestCase
 		caps.setCapability("version", "48.0");
 		caps.setCapability("screenResolution", "1280x1024");
 		caps.setCapability("name", name.getMethodName());
-		caps.setCapability("build", "MJB2CUSSmokeTestCases 03-14-2016 v2");
+		caps.setCapability("build", "MJB2CUSSmokeTestCases 03-17-2016 v1");
 		caps.setCapability("acceptSslCerts", "true");
 		caps.setCapability("tunnel-identifier", "MJConnection");
 
