@@ -1,0 +1,5 @@
+Newport;issuetype = Bug AND creator in ("sowmya@pragiti.com", "deepa@pragiti.com") AND created >= -7d order by created DESC
+MJ (Support);issuetype = Bug AND creator in ("supriya@pragiti.com", "kamaljeet@pragiti.com") AND created >= -7d order by created DESC
+MJ (Non Support);issuetype = Bug AND creator in (ravi, "jitesh@pragiti.com") AND created >= -7d order by created DESC
+Shimano (R1-R3);issuetype = Bug AND creator in (rahulsingh_thakur, "rahulverma@pragiti.com", ankitasoun, rajesh, akankshac) AND created >= -7d order by created DESC
+Solstice;issuetype = Bug AND creator in (komal) AND created >= -7d order by created DESC
