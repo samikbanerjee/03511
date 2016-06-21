@@ -17,11 +17,12 @@ public class JqlToExcelSheet
 {
 
 	/**
+	 * @param jira_Config_file
 	 * @param sheet
 	 * @param jiraQuery
 	 * @return wite the report in sheet in the workbook and returns it
 	 */
-	public static XSSFSheet writeReportToSheet(final XSSFSheet sheet, final String jiraQuery)
+	public static XSSFSheet writeReportToSheet(final String jira_Config_file, final XSSFSheet sheet, final String jiraQuery)
 	{
 
 		final String endPointQuery = "search?jql=" + jiraQuery;
@@ -55,7 +56,7 @@ public class JqlToExcelSheet
 		try
 		{
 			//Get The total Jira issues from jql
-			final JiraClient jc = new JiraClient();
+			final JiraClient jc = new JiraClient(jira_Config_file);
 			final String response = jc.getRestResponse(endPointQuery).asString();
 			final int Total = JsonPath.from(response).getInt("total");
 

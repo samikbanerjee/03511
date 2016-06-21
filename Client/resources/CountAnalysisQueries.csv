@@ -1,0 +1,2 @@
+Newport Total Bug Count;project = NP AND issuetype = Bug
+Newport Total Non Bug Count;project = NP AND issuetype != Bug

@@ -1,0 +1,3 @@
+Newport;issuetype = Bug AND creator in (Michelle.Zamora) AND created >= -7d order by created DESC
+Shimano (R1-R3);issuetype = Bug AND creator in (ejanus, scureton, kriley) AND created >= -7d order by created DESC
+MJ;issuetype = Bug AND creator in (rjeffery, jcarter, "kkirkpatrick@mauijim.com", ChrisHansen) AND created >= -7d order by created DESC

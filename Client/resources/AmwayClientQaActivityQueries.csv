@@ -1,0 +1,1 @@
+Athena;project = AT AND status changed BY (membersOf(jira-users-amway)) during (-24h, now())  ORDER BY key

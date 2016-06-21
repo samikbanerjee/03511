@@ -16,18 +16,18 @@ import com.jayway.restassured.specification.RequestSpecification;
  */
 public class JiraClient
 {
-	private static final String JIRA_CONFIG_FILE = "PragitiJira.properties";
 	private String userName;
 	private String passWord;
 	private String restAccessUrl;
 	ProjectConfiguration config;
 
 	/**
+	 * @param jira_Config_file
 	 * @throws IOException
 	 */
-	public JiraClient() throws IOException
+	public JiraClient(final String jira_Config_file) throws IOException
 	{
-		config = new ProjectConfiguration(JIRA_CONFIG_FILE);
+		config = new ProjectConfiguration(jira_Config_file);
 	}
 
 	/**
