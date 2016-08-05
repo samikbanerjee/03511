@@ -1,2 +1,8 @@
-Newport Total Bug Count;project = NP AND issuetype = Bug
-Newport Total Non Bug Count;project = NP AND issuetype != Bug
+MJ(Support) Total Bug Count;project in (MJB2C, ZO) AND issuetype = Bug
+MJ(Support) Total Non Bug Count;project in (MJB2C, ZO) AND issuetype != Bug
+MJ(Non Support) Total Bug Count;project in (MJB, MJB2CDEV) AND issuetype = Bug
+MJ(Non Support) Total Non Bug Count;project in (MJB, MJB2CDEV) AND issuetype != Bug
+Shimano Total Bug Count;project in (SHMC, SHMI, SHMP) AND issuetype = Bug
+Shimano Total Bug Count;project in (SHMC, SHMI, SHMP) AND issuetype != Bug
+Shimano B2B (I) Total Bug Count;project = ISHMB2B AND issuetype = Bug
+Shimano B2B (I) Total Non Bug Count;project = ISHMB2B AND issuetype != Bug

@@ -1,5 +1,6 @@
-Newport;issuetype = Bug AND creator in ("sowmya@pragiti.com", "deepa@pragiti.com") AND created >= -7d order by created DESC
-MJ (Support);issuetype = Bug AND creator in ("kamaljeet@pragiti.com") AND created >= -7d order by created DESC
-MJ (Non Support);issuetype = Bug AND creator in ("supriya@pragiti.com", ravi, "jitesh@pragiti.com") AND created >= -7d order by created DESC
-Shimano (R1-R3);issuetype = Bug AND creator in (rahulsingh_thakur, "rahulverma@pragiti.com", ankitasoun, rajesh, akankshac) AND created >= -7d order by created DESC
+Shimano B2B(I);issuetype = Bug AND creator in (Abhilash, roopal) AND created >= -7d order by created DESC
+MJ (Support);project in (MJB2C, ZO) AND issuetype = Bug AND creator in ("kamaljeet@pragiti.com","supriya@pragiti.com",akankshac) AND created >= -7d order by created DESC
+MJ (Non Support);project in (MJB, MJB2CDEV) AND issuetype = Bug AND creator in ("supriya@pragiti.com", ravi, "jitesh@pragiti.com", akankshac) AND created >= -7d order by created DESC
+Shimano (R1-R3);project in (SHMC, SHMI, SHMP) AND issuetype = Bug AND creator in (rahulsingh_thakur, "rahulverma@pragiti.com", ankitasoun, rajesh) AND created >= -7d order by created DESC
+Shimano Support; project = SB2CS AND issuetype = Bug AND creator in (rahulsingh_thakur, "rahulverma@pragiti.com", ankitasoun, rajesh) AND created >= -7d order by created DESC
 Solstice;issuetype = Bug AND creator in (komal) AND created >= -7d order by created DESC
