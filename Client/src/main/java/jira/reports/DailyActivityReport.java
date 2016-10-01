@@ -54,7 +54,5 @@ public class DailyActivityReport
 		out.close();
 		book.close();
 		System.out.println("Completed writing book: " + outputFileNm);
-
-
 	}
 }

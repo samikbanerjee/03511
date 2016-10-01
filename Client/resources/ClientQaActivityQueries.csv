@@ -1,2 +1,2 @@
-ShimanoB2C; (status changed BY ejanus during (-24h, now())) OR (status changed BY scureton during (-24h, now())) OR (status changed BY kriley during (-24h, now())) ORDER BY key
-MJ; (status changed BY rjeffery during (-24h, now())) OR (status changed BY jcarter during (-24h, now())) OR (status changed BY "kkirkpatrick@mauijim.com" during (-24h, now())) OR (status changed BY ChrisHansen during (-24h, now())) ORDER BY key
+MJ; (status changed TO "REOPENED" BY rjeffery during (-7d, now())) OR (status changed BY jcarter TO "REOPENED" during (-7d, now())) OR (status changed TO "REOPENED" BY "kkirkpatrick@mauijim.com" during (-7d, now())) OR (status changed TO "REOPENED" BY ChrisHansen during (-7d, now())) ORDER BY key
+ShimanoB2C; (status changed TO "REOPENED" BY ejanus during (-7d, now())) OR (status changed TO "REOPENED" BY scureton during (-7d, now())) OR (status changed TO "REOPENED" BY kriley during (-7d, now())) ORDER BY key
