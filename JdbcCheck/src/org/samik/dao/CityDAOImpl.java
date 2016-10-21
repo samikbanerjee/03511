@@ -60,7 +60,7 @@ public class CityDAOImpl implements CityDAO
 
 	/*
 	 * (non-Javadoc)
-	 *
+	 * 
 	 * @see org.samik.dao.CityDAO#createCity(org.samik.model.CityModel)
 	 */
 	@Override
@@ -82,7 +82,7 @@ public class CityDAOImpl implements CityDAO
 
 	/*
 	 * (non-Javadoc)
-	 *
+	 * 
 	 * @see org.samik.dao.CityDAO#getCityById(int)
 	 */
 	@Override
@@ -95,7 +95,7 @@ public class CityDAOImpl implements CityDAO
 
 	/*
 	 * (non-Javadoc)
-	 *
+	 * 
 	 * @see org.samik.dao.CityDAO#getCitiesByCountryCode(java.lang.String)
 	 */
 	@Override
@@ -106,9 +106,21 @@ public class CityDAOImpl implements CityDAO
 		{ countryCode }, new CityModelMapper());
 	}
 
+	/**
+	 * @param param
+	 * @param value
+	 * @return List of Cities
+	 */
+	public List<CityModel> getCitiesByParamValue(final String param, final String value)
+	{
+		final String sql = "SELECT ID, 	Name, CountryCode, District, Population FROM	city WHERE	?=?";
+		return jdbcTemplate.query(sql, new Object[]
+		{ param, value }, new CityModelMapper());
+	}
+
 	/*
 	 * (non-Javadoc)
-	 *
+	 * 
 	 * @see org.samik.dao.CityDAO#updateCity(org.samik.model.CityModel)
 	 */
 	@Override
@@ -130,7 +142,7 @@ public class CityDAOImpl implements CityDAO
 
 	/*
 	 * (non-Javadoc)
-	 *
+	 * 
 	 * @see org.samik.dao.CityDAO#deleteCityById(int)
 	 */
 	@Override

@@ -30,5 +30,13 @@ public class ProjectConfiguration
 		return prop.getProperty(propertyKey);
 	}
 
-
+	/**
+	 * @param propertyKey
+	 * @param defaultVal
+	 * @return property value or default value
+	 */
+	public String getPropertyValue(final String propertyKey, final String defaultVal)
+	{
+		return prop.getProperty(propertyKey, defaultVal);
+	}
 }

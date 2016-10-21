@@ -4,6 +4,8 @@ Deepa GTR;status changed BY "deepa@pragiti.com" during (-24h, now()) ORDER BY ke
 Rahul ST;status changed BY rahulsingh_thakur during (-24h, now())  ORDER BY key
 Rahul V - Shimano Dev;project in (SHMP, SHMC, SHMI) AND status changed BY "rahulverma@pragiti.com" during (-24h, now())  ORDER BY key
 Rahul V - Shimano Support;project in (SB2CS) AND status changed BY "rahulverma@pragiti.com" during (-24h, now())  ORDER BY key
+Rahul Pandey - Shimano Support;project in (SB2CS) AND status changed BY "Rahul Pandey" during (-24h, now())  ORDER BY key
+Rahul V - NVI;project in (NVI) AND status changed BY "rahulverma@pragiti.com" during (-24h, now())  ORDER BY key
 Ankita S;status changed BY ankitasoun during (-24h, now())  ORDER BY key
 Rajesh P;status changed BY rajesh during (-24h, now())  ORDER BY key
 Supriya - MJ Dev;project in (MJB2CDEV, MJB) AND status changed BY "supriya@pragiti.com" during (-24h, now()) ORDER BY key
