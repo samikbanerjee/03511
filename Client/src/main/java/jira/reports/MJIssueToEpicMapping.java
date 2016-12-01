@@ -105,7 +105,7 @@ public class MJIssueToEpicMapping
 		final Map<String, String> issueEpic = new HashMap<String, String>();
 		final JiraClient jc = new JiraClient(jira_config_file);
 		final String issuesStr = issueKeys.toString().replace("[", "").replace("]", "").trim();
-		final String searchQry = "search?jql=Key in (" + issuesStr + ")";
+		final String searchQry = "search?maxResults=1000&jql=Key in (" + issuesStr + ")";
 
 		final String resp = jc.getRestResponse(searchQry).asString();
 		final int count = JsonPath.from(resp).getInt("total");
