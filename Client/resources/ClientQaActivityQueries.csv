@@ -1,2 +1,4 @@
-MJ; (status changed TO "REOPENED" BY rjeffery during (-7d, now())) OR (status changed BY jcarter TO "REOPENED" during (-7d, now())) OR (status changed TO "REOPENED" BY "kkirkpatrick@mauijim.com" during (-7d, now())) OR (status changed TO "REOPENED" BY ChrisHansen during (-7d, now())) ORDER BY key
-ShimanoB2C; (status changed TO "REOPENED" BY ejanus during (-7d, now())) OR (status changed TO "REOPENED" BY scureton during (-7d, now())) OR (status changed TO "REOPENED" BY kriley during (-7d, now())) ORDER BY key
+NVI;status changed TO "REOPENED" BY membersOf("client-users-NVI") during(-7d, now())
+SHB2B;project =SHB2B and status changed TO "REOPENED" BY membersOf("client-Confluence-users-Shimano B2B project") during(-7d, now())
+MJDEV;status changed TO "REOPENED" BY membersOf("client-jira-users-MauiJimB2B") during(-7d, now())
+MJSustenance;status changed TO "REOPENED" BY membersOf("client-Confluence-users-MJ-RW") during(-7d, now())

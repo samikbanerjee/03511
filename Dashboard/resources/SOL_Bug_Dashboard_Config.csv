@@ -1,0 +1,65 @@
+project = SOL AND issuetype = Bug AND status = "New ticket" AND priority = Blocker;378;2
+project = SOL AND issuetype = Bug AND status = "New ticket" AND priority = Critical;379;2
+project = SOL AND issuetype = Bug AND status = "New ticket" AND priority = Major;380;2
+project = SOL AND issuetype = Bug AND status = "New ticket" AND priority = Minor;381;2
+project = SOL AND issuetype = Bug AND status = "New ticket" AND priority = Trivial;382;2
+project = SOL AND issuetype = Bug AND status = "Issue Approval" AND priority = Blocker;378;3
+project = SOL AND issuetype = Bug AND status = "Issue Approval" AND priority = Critical;379;3
+project = SOL AND issuetype = Bug AND status = "Issue Approval" AND priority = Major;380;3
+project = SOL AND issuetype = Bug AND status = "Issue Approval" AND priority = Minor;381;3
+project = SOL AND issuetype = Bug AND status = "Issue Approval" AND priority = Trivial;382;3
+project = SOL AND issuetype = Bug AND status = Open AND priority = Blocker;378;4
+project = SOL AND issuetype = Bug AND status = Open AND priority = Critical;379;4
+project = SOL AND issuetype = Bug AND status = Open AND priority = Major;380;4
+project = SOL AND issuetype = Bug AND status = Open AND priority = Minor;381;4
+project = SOL AND issuetype = Bug AND status = Open AND priority = Trivial;382;4
+project = SOL AND issuetype = Bug AND status = Reopened AND priority = Blocker;378;5
+project = SOL AND issuetype = Bug AND status = Reopened AND priority = Critical;379;5
+project = SOL AND issuetype = Bug AND status = Reopened AND priority = Major;380;5
+project = SOL AND issuetype = Bug AND status = Reopened AND priority = Minor;381;5
+project = SOL AND issuetype = Bug AND status = Reopened AND priority = Trivial;382;5
+project = SOL AND issuetype = Bug AND status = "In Progress" AND priority = Blocker;378;6
+project = SOL AND issuetype = Bug AND status = "In Progress" AND priority = Critical;379;6
+project = SOL AND issuetype = Bug AND status = "In Progress" AND priority = Major;380;6
+project = SOL AND issuetype = Bug AND status = "In Progress" AND priority = Minor;381;6
+project = SOL AND issuetype = Bug AND status = "In Progress" AND priority = Trivial;382;6
+project = SOL AND issuetype = Bug AND status = "Request for input" AND priority = Blocker;378;7
+project = SOL AND issuetype = Bug AND status = "Request for input" AND priority = Critical;379;7
+project = SOL AND issuetype = Bug AND status = "Request for input" AND priority = Major;380;7
+project = SOL AND issuetype = Bug AND status = "Request for input" AND priority = Minor;381;7
+project = SOL AND issuetype = Bug AND status = "Request for input" AND priority = Trivial;382;7
+project = SOL AND issuetype = Bug AND status = Review AND priority = Blocker;378;8
+project = SOL AND issuetype = Bug AND status = Review AND priority = Critical;379;8
+project = SOL AND issuetype = Bug AND status = Review AND priority = Major;380;8
+project = SOL AND issuetype = Bug AND status = Review AND priority = Minor;381;8
+project = SOL AND issuetype = Bug AND status = Review AND priority = Trivial;382;8
+project = SOL AND issuetype = Bug AND status = "Ready for Build" AND priority = Blocker;378;9
+project = SOL AND issuetype = Bug AND status = "Ready for Build" AND priority = Critical;379;9
+project = SOL AND issuetype = Bug AND status = "Ready for Build" AND priority = Major;380;9
+project = SOL AND issuetype = Bug AND status = "Ready for Build" AND priority = Minor;381;9
+project = SOL AND issuetype = Bug AND status = "Ready for Build" AND priority = Trivial;382;9
+project = SOL AND issuetype = Bug AND status = "Pragiti QA" AND priority = Blocker;378;10
+project = SOL AND issuetype = Bug AND status = "Pragiti QA" AND priority = Critical;379;10
+project = SOL AND issuetype = Bug AND status = "Pragiti QA" AND priority = Major;380;10
+project = SOL AND issuetype = Bug AND status = "Pragiti QA" AND priority = Minor;381;10
+project = SOL AND issuetype = Bug AND status = "Pragiti QA" AND priority = Trivial;382;10
+project = SOL AND issuetype = Bug AND status = "Customer QA" AND priority = Blocker;378;11
+project = SOL AND issuetype = Bug AND status = "Customer QA" AND priority = Critical;379;11
+project = SOL AND issuetype = Bug AND status = "Customer QA" AND priority = Major;380;11
+project = SOL AND issuetype = Bug AND status = "Customer QA" AND priority = Minor;381;11
+project = SOL AND issuetype = Bug AND status = "Customer QA" AND priority = Trivial;382;11
+project = SOL AND issuetype = Bug AND status = Resolved AND priority = Blocker;378;12
+project = SOL AND issuetype = Bug AND status = Resolved AND priority = Critical;379;12
+project = SOL AND issuetype = Bug AND status = Resolved AND priority = Major;380;12
+project = SOL AND issuetype = Bug AND status = Resolved AND priority = Minor;381;12
+project = SOL AND issuetype = Bug AND status = Resolved AND priority = Trivial;382;12
+project = SOL AND issuetype = Bug AND status = Invalid AND priority = Blocker;378;13
+project = SOL AND issuetype = Bug AND status = Invalid AND priority = Critical;379;13
+project = SOL AND issuetype = Bug AND status = Invalid AND priority = Major;380;13
+project = SOL AND issuetype = Bug AND status = Invalid AND priority = Minor;381;13
+project = SOL AND issuetype = Bug AND status = Invalid AND priority = Trivial;382;13
+project = SOL AND issuetype = Bug AND status = Blocked AND priority = Blocker;378;14
+project = SOL AND issuetype = Bug AND status = Blocked AND priority = Critical;379;14
+project = SOL AND issuetype = Bug AND status = Blocked AND priority = Major;380;14
+project = SOL AND issuetype = Bug AND status = Blocked AND priority = Minor;381;14
+project = SOL AND issuetype = Bug AND status = Blocked AND priority = Trivial;382;14

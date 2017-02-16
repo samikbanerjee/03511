@@ -1,0 +1,65 @@
+project = NVI AND issuetype = Bug AND status = "New ticket" AND priority = Blocker;30;2
+project = NVI AND issuetype = Bug AND status = "New ticket" AND priority = Critical;31;2
+project = NVI AND issuetype = Bug AND status = "New ticket" AND priority = Major;32;2
+project = NVI AND issuetype = Bug AND status = "New ticket" AND priority = Minor;33;2
+project = NVI AND issuetype = Bug AND status = "New ticket" AND priority = Trivial;34;2
+project = NVI AND issuetype = Bug AND status = "Issue Approval" AND priority = Blocker;30;3
+project = NVI AND issuetype = Bug AND status = "Issue Approval" AND priority = Critical;31;3
+project = NVI AND issuetype = Bug AND status = "Issue Approval" AND priority = Major;32;3
+project = NVI AND issuetype = Bug AND status = "Issue Approval" AND priority = Minor;33;3
+project = NVI AND issuetype = Bug AND status = "Issue Approval" AND priority = Trivial;34;3
+project = NVI AND issuetype = Bug AND status = Open AND priority = Blocker;30;4
+project = NVI AND issuetype = Bug AND status = Open AND priority = Critical;31;4
+project = NVI AND issuetype = Bug AND status = Open AND priority = Major;32;4
+project = NVI AND issuetype = Bug AND status = Open AND priority = Minor;33;4
+project = NVI AND issuetype = Bug AND status = Open AND priority = Trivial;34;4
+project = NVI AND issuetype = Bug AND status = Reopened AND priority = Blocker;30;5
+project = NVI AND issuetype = Bug AND status = Reopened AND priority = Critical;31;5
+project = NVI AND issuetype = Bug AND status = Reopened AND priority = Major;32;5
+project = NVI AND issuetype = Bug AND status = Reopened AND priority = Minor;33;5
+project = NVI AND issuetype = Bug AND status = Reopened AND priority = Trivial;34;5
+project = NVI AND issuetype = Bug AND status = "In Progress" AND priority = Blocker;30;6
+project = NVI AND issuetype = Bug AND status = "In Progress" AND priority = Critical;31;6
+project = NVI AND issuetype = Bug AND status = "In Progress" AND priority = Major;32;6
+project = NVI AND issuetype = Bug AND status = "In Progress" AND priority = Minor;33;6
+project = NVI AND issuetype = Bug AND status = "In Progress" AND priority = Trivial;34;6
+project = NVI AND issuetype = Bug AND status = "Request for input" AND priority = Blocker;30;7
+project = NVI AND issuetype = Bug AND status = "Request for input" AND priority = Critical;31;7
+project = NVI AND issuetype = Bug AND status = "Request for input" AND priority = Major;32;7
+project = NVI AND issuetype = Bug AND status = "Request for input" AND priority = Minor;33;7
+project = NVI AND issuetype = Bug AND status = "Request for input" AND priority = Trivial;34;7
+project = NVI AND issuetype = Bug AND status = Review AND priority = Blocker;30;8
+project = NVI AND issuetype = Bug AND status = Review AND priority = Critical;31;8
+project = NVI AND issuetype = Bug AND status = Review AND priority = Major;32;8
+project = NVI AND issuetype = Bug AND status = Review AND priority = Minor;33;8
+project = NVI AND issuetype = Bug AND status = Review AND priority = Trivial;34;8
+project = NVI AND issuetype = Bug AND status = "Ready for Build" AND priority = Blocker;30;9
+project = NVI AND issuetype = Bug AND status = "Ready for Build" AND priority = Critical;31;9
+project = NVI AND issuetype = Bug AND status = "Ready for Build" AND priority = Major;32;9
+project = NVI AND issuetype = Bug AND status = "Ready for Build" AND priority = Minor;33;9
+project = NVI AND issuetype = Bug AND status = "Ready for Build" AND priority = Trivial;34;9
+project = NVI AND issuetype = Bug AND status = "Pragiti QA" AND priority = Blocker;30;10
+project = NVI AND issuetype = Bug AND status = "Pragiti QA" AND priority = Critical;31;10
+project = NVI AND issuetype = Bug AND status = "Pragiti QA" AND priority = Major;32;10
+project = NVI AND issuetype = Bug AND status = "Pragiti QA" AND priority = Minor;33;10
+project = NVI AND issuetype = Bug AND status = "Pragiti QA" AND priority = Trivial;34;10
+project = NVI AND issuetype = Bug AND status = "Customer QA" AND priority = Blocker;30;11
+project = NVI AND issuetype = Bug AND status = "Customer QA" AND priority = Critical;31;11
+project = NVI AND issuetype = Bug AND status = "Customer QA" AND priority = Major;32;11
+project = NVI AND issuetype = Bug AND status = "Customer QA" AND priority = Minor;33;11
+project = NVI AND issuetype = Bug AND status = "Customer QA" AND priority = Trivial;34;11
+project = NVI AND issuetype = Bug AND status = Resolved AND priority = Blocker;30;12
+project = NVI AND issuetype = Bug AND status = Resolved AND priority = Critical;31;12
+project = NVI AND issuetype = Bug AND status = Resolved AND priority = Major;32;12
+project = NVI AND issuetype = Bug AND status = Resolved AND priority = Minor;33;12
+project = NVI AND issuetype = Bug AND status = Resolved AND priority = Trivial;34;12
+project = NVI AND issuetype = Bug AND status = Invalid AND priority = Blocker;30;13
+project = NVI AND issuetype = Bug AND status = Invalid AND priority = Critical;31;13
+project = NVI AND issuetype = Bug AND status = Invalid AND priority = Major;32;13
+project = NVI AND issuetype = Bug AND status = Invalid AND priority = Minor;33;13
+project = NVI AND issuetype = Bug AND status = Invalid AND priority = Trivial;34;13
+project = NVI AND issuetype = Bug AND status = Blocked AND priority = Blocker;30;14
+project = NVI AND issuetype = Bug AND status = Blocked AND priority = Critical;31;14
+project = NVI AND issuetype = Bug AND status = Blocked AND priority = Major;32;14
+project = NVI AND issuetype = Bug AND status = Blocked AND priority = Minor;33;14
+project = NVI AND issuetype = Bug AND status = Blocked AND priority = Trivial;34;14

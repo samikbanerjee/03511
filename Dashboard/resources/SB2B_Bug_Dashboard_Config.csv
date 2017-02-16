@@ -1,0 +1,65 @@
+project = SHB2B AND issuetype = Bug AND status = "New ticket" AND priority = Blocker;88;2
+project = SHB2B AND issuetype = Bug AND status = "New ticket" AND priority = Critical;89;2
+project = SHB2B AND issuetype = Bug AND status = "New ticket" AND priority = Major;90;2
+project = SHB2B AND issuetype = Bug AND status = "New ticket" AND priority = Minor;91;2
+project = SHB2B AND issuetype = Bug AND status = "New ticket" AND priority = Trivial;92;2
+project = SHB2B AND issuetype = Bug AND status = "Issue Approval" AND priority = Blocker;88;3
+project = SHB2B AND issuetype = Bug AND status = "Issue Approval" AND priority = Critical;89;3
+project = SHB2B AND issuetype = Bug AND status = "Issue Approval" AND priority = Major;90;3
+project = SHB2B AND issuetype = Bug AND status = "Issue Approval" AND priority = Minor;91;3
+project = SHB2B AND issuetype = Bug AND status = "Issue Approval" AND priority = Trivial;92;3
+project = SHB2B AND issuetype = Bug AND status = Open AND priority = Blocker;88;4
+project = SHB2B AND issuetype = Bug AND status = Open AND priority = Critical;89;4
+project = SHB2B AND issuetype = Bug AND status = Open AND priority = Major;90;4
+project = SHB2B AND issuetype = Bug AND status = Open AND priority = Minor;91;4
+project = SHB2B AND issuetype = Bug AND status = Open AND priority = Trivial;92;4
+project = SHB2B AND issuetype = Bug AND status = Reopened AND priority = Blocker;88;5
+project = SHB2B AND issuetype = Bug AND status = Reopened AND priority = Critical;89;5
+project = SHB2B AND issuetype = Bug AND status = Reopened AND priority = Major;90;5
+project = SHB2B AND issuetype = Bug AND status = Reopened AND priority = Minor;91;5
+project = SHB2B AND issuetype = Bug AND status = Reopened AND priority = Trivial;92;5
+project = SHB2B AND issuetype = Bug AND status = "In Progress" AND priority = Blocker;88;6
+project = SHB2B AND issuetype = Bug AND status = "In Progress" AND priority = Critical;89;6
+project = SHB2B AND issuetype = Bug AND status = "In Progress" AND priority = Major;90;6
+project = SHB2B AND issuetype = Bug AND status = "In Progress" AND priority = Minor;91;6
+project = SHB2B AND issuetype = Bug AND status = "In Progress" AND priority = Trivial;92;6
+project = SHB2B AND issuetype = Bug AND status = "Request for input" AND priority = Blocker;88;7
+project = SHB2B AND issuetype = Bug AND status = "Request for input" AND priority = Critical;89;7
+project = SHB2B AND issuetype = Bug AND status = "Request for input" AND priority = Major;90;7
+project = SHB2B AND issuetype = Bug AND status = "Request for input" AND priority = Minor;91;7
+project = SHB2B AND issuetype = Bug AND status = "Request for input" AND priority = Trivial;92;7
+project = SHB2B AND issuetype = Bug AND status = Review AND priority = Blocker;88;8
+project = SHB2B AND issuetype = Bug AND status = Review AND priority = Critical;89;8
+project = SHB2B AND issuetype = Bug AND status = Review AND priority = Major;90;8
+project = SHB2B AND issuetype = Bug AND status = Review AND priority = Minor;91;8
+project = SHB2B AND issuetype = Bug AND status = Review AND priority = Trivial;92;8
+project = SHB2B AND issuetype = Bug AND status = "Ready for Build" AND priority = Blocker;88;9
+project = SHB2B AND issuetype = Bug AND status = "Ready for Build" AND priority = Critical;89;9
+project = SHB2B AND issuetype = Bug AND status = "Ready for Build" AND priority = Major;90;9
+project = SHB2B AND issuetype = Bug AND status = "Ready for Build" AND priority = Minor;91;9
+project = SHB2B AND issuetype = Bug AND status = "Ready for Build" AND priority = Trivial;92;9
+project = SHB2B AND issuetype = Bug AND status = "Pragiti QA" AND priority = Blocker;88;10
+project = SHB2B AND issuetype = Bug AND status = "Pragiti QA" AND priority = Critical;89;10
+project = SHB2B AND issuetype = Bug AND status = "Pragiti QA" AND priority = Major;90;10
+project = SHB2B AND issuetype = Bug AND status = "Pragiti QA" AND priority = Minor;91;10
+project = SHB2B AND issuetype = Bug AND status = "Pragiti QA" AND priority = Trivial;92;10
+project = SHB2B AND issuetype = Bug AND status = "Customer QA" AND priority = Blocker;88;11
+project = SHB2B AND issuetype = Bug AND status = "Customer QA" AND priority = Critical;89;11
+project = SHB2B AND issuetype = Bug AND status = "Customer QA" AND priority = Major;90;11
+project = SHB2B AND issuetype = Bug AND status = "Customer QA" AND priority = Minor;91;11
+project = SHB2B AND issuetype = Bug AND status = "Customer QA" AND priority = Trivial;92;11
+project = SHB2B AND issuetype = Bug AND status = Resolved AND priority = Blocker;88;12
+project = SHB2B AND issuetype = Bug AND status = Resolved AND priority = Critical;89;12
+project = SHB2B AND issuetype = Bug AND status = Resolved AND priority = Major;90;12
+project = SHB2B AND issuetype = Bug AND status = Resolved AND priority = Minor;91;12
+project = SHB2B AND issuetype = Bug AND status = Resolved AND priority = Trivial;92;12
+project = SHB2B AND issuetype = Bug AND status = Invalid AND priority = Blocker;88;13
+project = SHB2B AND issuetype = Bug AND status = Invalid AND priority = Critical;89;13
+project = SHB2B AND issuetype = Bug AND status = Invalid AND priority = Major;90;13
+project = SHB2B AND issuetype = Bug AND status = Invalid AND priority = Minor;91;13
+project = SHB2B AND issuetype = Bug AND status = Invalid AND priority = Trivial;92;13
+project = SHB2B AND issuetype = Bug AND status = Blocked AND priority = Blocker;88;14
+project = SHB2B AND issuetype = Bug AND status = Blocked AND priority = Critical;89;14
+project = SHB2B AND issuetype = Bug AND status = Blocked AND priority = Major;90;14
+project = SHB2B AND issuetype = Bug AND status = Blocked AND priority = Minor;91;14
+project = SHB2B AND issuetype = Bug AND status = Blocked AND priority = Trivial;92;14

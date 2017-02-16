@@ -1,0 +1,65 @@
+project = SB2CS AND issuetype = Bug AND status = "New ticket" AND priority = Blocker;320;2
+project = SB2CS AND issuetype = Bug AND status = "New ticket" AND priority = Critical;321;2
+project = SB2CS AND issuetype = Bug AND status = "New ticket" AND priority = Major;322;2
+project = SB2CS AND issuetype = Bug AND status = "New ticket" AND priority = Minor;323;2
+project = SB2CS AND issuetype = Bug AND status = "New ticket" AND priority = Trivial;324;2
+project = SB2CS AND issuetype = Bug AND status = "Issue Approval" AND priority = Blocker;320;3
+project = SB2CS AND issuetype = Bug AND status = "Issue Approval" AND priority = Critical;321;3
+project = SB2CS AND issuetype = Bug AND status = "Issue Approval" AND priority = Major;322;3
+project = SB2CS AND issuetype = Bug AND status = "Issue Approval" AND priority = Minor;323;3
+project = SB2CS AND issuetype = Bug AND status = "Issue Approval" AND priority = Trivial;324;3
+project = SB2CS AND issuetype = Bug AND status = Open AND priority = Blocker;320;4
+project = SB2CS AND issuetype = Bug AND status = Open AND priority = Critical;321;4
+project = SB2CS AND issuetype = Bug AND status = Open AND priority = Major;322;4
+project = SB2CS AND issuetype = Bug AND status = Open AND priority = Minor;323;4
+project = SB2CS AND issuetype = Bug AND status = Open AND priority = Trivial;324;4
+project = SB2CS AND issuetype = Bug AND status = Reopened AND priority = Blocker;320;5
+project = SB2CS AND issuetype = Bug AND status = Reopened AND priority = Critical;321;5
+project = SB2CS AND issuetype = Bug AND status = Reopened AND priority = Major;322;5
+project = SB2CS AND issuetype = Bug AND status = Reopened AND priority = Minor;323;5
+project = SB2CS AND issuetype = Bug AND status = Reopened AND priority = Trivial;324;5
+project = SB2CS AND issuetype = Bug AND status = "In Progress" AND priority = Blocker;320;6
+project = SB2CS AND issuetype = Bug AND status = "In Progress" AND priority = Critical;321;6
+project = SB2CS AND issuetype = Bug AND status = "In Progress" AND priority = Major;322;6
+project = SB2CS AND issuetype = Bug AND status = "In Progress" AND priority = Minor;323;6
+project = SB2CS AND issuetype = Bug AND status = "In Progress" AND priority = Trivial;324;6
+project = SB2CS AND issuetype = Bug AND status = "Request for input" AND priority = Blocker;320;7
+project = SB2CS AND issuetype = Bug AND status = "Request for input" AND priority = Critical;321;7
+project = SB2CS AND issuetype = Bug AND status = "Request for input" AND priority = Major;322;7
+project = SB2CS AND issuetype = Bug AND status = "Request for input" AND priority = Minor;323;7
+project = SB2CS AND issuetype = Bug AND status = "Request for input" AND priority = Trivial;324;7
+project = SB2CS AND issuetype = Bug AND status = Review AND priority = Blocker;320;8
+project = SB2CS AND issuetype = Bug AND status = Review AND priority = Critical;321;8
+project = SB2CS AND issuetype = Bug AND status = Review AND priority = Major;322;8
+project = SB2CS AND issuetype = Bug AND status = Review AND priority = Minor;323;8
+project = SB2CS AND issuetype = Bug AND status = Review AND priority = Trivial;324;8
+project = SB2CS AND issuetype = Bug AND status = "Ready for Build" AND priority = Blocker;320;9
+project = SB2CS AND issuetype = Bug AND status = "Ready for Build" AND priority = Critical;321;9
+project = SB2CS AND issuetype = Bug AND status = "Ready for Build" AND priority = Major;322;9
+project = SB2CS AND issuetype = Bug AND status = "Ready for Build" AND priority = Minor;323;9
+project = SB2CS AND issuetype = Bug AND status = "Ready for Build" AND priority = Trivial;324;9
+project = SB2CS AND issuetype = Bug AND status = "Pragiti QA" AND priority = Blocker;320;10
+project = SB2CS AND issuetype = Bug AND status = "Pragiti QA" AND priority = Critical;321;10
+project = SB2CS AND issuetype = Bug AND status = "Pragiti QA" AND priority = Major;322;10
+project = SB2CS AND issuetype = Bug AND status = "Pragiti QA" AND priority = Minor;323;10
+project = SB2CS AND issuetype = Bug AND status = "Pragiti QA" AND priority = Trivial;324;10
+project = SB2CS AND issuetype = Bug AND status = "Customer QA" AND priority = Blocker;320;11
+project = SB2CS AND issuetype = Bug AND status = "Customer QA" AND priority = Critical;321;11
+project = SB2CS AND issuetype = Bug AND status = "Customer QA" AND priority = Major;322;11
+project = SB2CS AND issuetype = Bug AND status = "Customer QA" AND priority = Minor;323;11
+project = SB2CS AND issuetype = Bug AND status = "Customer QA" AND priority = Trivial;324;11
+project = SB2CS AND issuetype = Bug AND status = Resolved AND priority = Blocker;320;12
+project = SB2CS AND issuetype = Bug AND status = Resolved AND priority = Critical;321;12
+project = SB2CS AND issuetype = Bug AND status = Resolved AND priority = Major;322;12
+project = SB2CS AND issuetype = Bug AND status = Resolved AND priority = Minor;323;12
+project = SB2CS AND issuetype = Bug AND status = Resolved AND priority = Trivial;324;12
+project = SB2CS AND issuetype = Bug AND status = Invalid AND priority = Blocker;320;13
+project = SB2CS AND issuetype = Bug AND status = Invalid AND priority = Critical;321;13
+project = SB2CS AND issuetype = Bug AND status = Invalid AND priority = Major;322;13
+project = SB2CS AND issuetype = Bug AND status = Invalid AND priority = Minor;323;13
+project = SB2CS AND issuetype = Bug AND status = Invalid AND priority = Trivial;324;13
+project = SB2CS AND issuetype = Bug AND status = Blocked AND priority = Blocker;320;14
+project = SB2CS AND issuetype = Bug AND status = Blocked AND priority = Critical;321;14
+project = SB2CS AND issuetype = Bug AND status = Blocked AND priority = Major;322;14
+project = SB2CS AND issuetype = Bug AND status = Blocked AND priority = Minor;323;14
+project = SB2CS AND issuetype = Bug AND status = Blocked AND priority = Trivial;324;14

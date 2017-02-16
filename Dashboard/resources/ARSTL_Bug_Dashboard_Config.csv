@@ -1,0 +1,65 @@
+project = ARSTLB2B AND issuetype = Bug AND status = "New ticket" AND priority = Blocker;146;2
+project = ARSTLB2B AND issuetype = Bug AND status = "New ticket" AND priority = Critical;147;2
+project = ARSTLB2B AND issuetype = Bug AND status = "New ticket" AND priority = Major;148;2
+project = ARSTLB2B AND issuetype = Bug AND status = "New ticket" AND priority = Minor;149;2
+project = ARSTLB2B AND issuetype = Bug AND status = "New ticket" AND priority = Trivial;150;2
+project = ARSTLB2B AND issuetype = Bug AND status = "Issue Approval" AND priority = Blocker;146;3
+project = ARSTLB2B AND issuetype = Bug AND status = "Issue Approval" AND priority = Critical;147;3
+project = ARSTLB2B AND issuetype = Bug AND status = "Issue Approval" AND priority = Major;148;3
+project = ARSTLB2B AND issuetype = Bug AND status = "Issue Approval" AND priority = Minor;149;3
+project = ARSTLB2B AND issuetype = Bug AND status = "Issue Approval" AND priority = Trivial;150;3
+project = ARSTLB2B AND issuetype = Bug AND status = Open AND priority = Blocker;146;4
+project = ARSTLB2B AND issuetype = Bug AND status = Open AND priority = Critical;147;4
+project = ARSTLB2B AND issuetype = Bug AND status = Open AND priority = Major;148;4
+project = ARSTLB2B AND issuetype = Bug AND status = Open AND priority = Minor;149;4
+project = ARSTLB2B AND issuetype = Bug AND status = Open AND priority = Trivial;150;4
+project = ARSTLB2B AND issuetype = Bug AND status = Reopened AND priority = Blocker;146;5
+project = ARSTLB2B AND issuetype = Bug AND status = Reopened AND priority = Critical;147;5
+project = ARSTLB2B AND issuetype = Bug AND status = Reopened AND priority = Major;148;5
+project = ARSTLB2B AND issuetype = Bug AND status = Reopened AND priority = Minor;149;5
+project = ARSTLB2B AND issuetype = Bug AND status = Reopened AND priority = Trivial;150;5
+project = ARSTLB2B AND issuetype = Bug AND status = "In Progress" AND priority = Blocker;146;6
+project = ARSTLB2B AND issuetype = Bug AND status = "In Progress" AND priority = Critical;147;6
+project = ARSTLB2B AND issuetype = Bug AND status = "In Progress" AND priority = Major;148;6
+project = ARSTLB2B AND issuetype = Bug AND status = "In Progress" AND priority = Minor;149;6
+project = ARSTLB2B AND issuetype = Bug AND status = "In Progress" AND priority = Trivial;150;6
+project = ARSTLB2B AND issuetype = Bug AND status = "Request for input" AND priority = Blocker;146;7
+project = ARSTLB2B AND issuetype = Bug AND status = "Request for input" AND priority = Critical;147;7
+project = ARSTLB2B AND issuetype = Bug AND status = "Request for input" AND priority = Major;148;7
+project = ARSTLB2B AND issuetype = Bug AND status = "Request for input" AND priority = Minor;149;7
+project = ARSTLB2B AND issuetype = Bug AND status = "Request for input" AND priority = Trivial;150;7
+project = ARSTLB2B AND issuetype = Bug AND status = Review AND priority = Blocker;146;8
+project = ARSTLB2B AND issuetype = Bug AND status = Review AND priority = Critical;147;8
+project = ARSTLB2B AND issuetype = Bug AND status = Review AND priority = Major;148;8
+project = ARSTLB2B AND issuetype = Bug AND status = Review AND priority = Minor;149;8
+project = ARSTLB2B AND issuetype = Bug AND status = Review AND priority = Trivial;150;8
+project = ARSTLB2B AND issuetype = Bug AND status = "Ready for Build" AND priority = Blocker;146;9
+project = ARSTLB2B AND issuetype = Bug AND status = "Ready for Build" AND priority = Critical;147;9
+project = ARSTLB2B AND issuetype = Bug AND status = "Ready for Build" AND priority = Major;148;9
+project = ARSTLB2B AND issuetype = Bug AND status = "Ready for Build" AND priority = Minor;149;9
+project = ARSTLB2B AND issuetype = Bug AND status = "Ready for Build" AND priority = Trivial;150;9
+project = ARSTLB2B AND issuetype = Bug AND status = "Pragiti QA" AND priority = Blocker;146;10
+project = ARSTLB2B AND issuetype = Bug AND status = "Pragiti QA" AND priority = Critical;147;10
+project = ARSTLB2B AND issuetype = Bug AND status = "Pragiti QA" AND priority = Major;148;10
+project = ARSTLB2B AND issuetype = Bug AND status = "Pragiti QA" AND priority = Minor;149;10
+project = ARSTLB2B AND issuetype = Bug AND status = "Pragiti QA" AND priority = Trivial;150;10
+project = ARSTLB2B AND issuetype = Bug AND status = "Customer QA" AND priority = Blocker;146;11
+project = ARSTLB2B AND issuetype = Bug AND status = "Customer QA" AND priority = Critical;147;11
+project = ARSTLB2B AND issuetype = Bug AND status = "Customer QA" AND priority = Major;148;11
+project = ARSTLB2B AND issuetype = Bug AND status = "Customer QA" AND priority = Minor;149;11
+project = ARSTLB2B AND issuetype = Bug AND status = "Customer QA" AND priority = Trivial;150;11
+project = ARSTLB2B AND issuetype = Bug AND status = Resolved AND priority = Blocker;146;12
+project = ARSTLB2B AND issuetype = Bug AND status = Resolved AND priority = Critical;147;12
+project = ARSTLB2B AND issuetype = Bug AND status = Resolved AND priority = Major;148;12
+project = ARSTLB2B AND issuetype = Bug AND status = Resolved AND priority = Minor;149;12
+project = ARSTLB2B AND issuetype = Bug AND status = Resolved AND priority = Trivial;150;12
+project = ARSTLB2B AND issuetype = Bug AND status = Invalid AND priority = Blocker;146;13
+project = ARSTLB2B AND issuetype = Bug AND status = Invalid AND priority = Critical;147;13
+project = ARSTLB2B AND issuetype = Bug AND status = Invalid AND priority = Major;148;13
+project = ARSTLB2B AND issuetype = Bug AND status = Invalid AND priority = Minor;149;13
+project = ARSTLB2B AND issuetype = Bug AND status = Invalid AND priority = Trivial;150;13
+project = ARSTLB2B AND issuetype = Bug AND status = Blocked AND priority = Blocker;146;14
+project = ARSTLB2B AND issuetype = Bug AND status = Blocked AND priority = Critical;147;14
+project = ARSTLB2B AND issuetype = Bug AND status = Blocked AND priority = Major;148;14
+project = ARSTLB2B AND issuetype = Bug AND status = Blocked AND priority = Minor;149;14
+project = ARSTLB2B AND issuetype = Bug AND status = Blocked AND priority = Trivial;150;14
