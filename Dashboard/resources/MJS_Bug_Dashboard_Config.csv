@@ -1,0 +1,65 @@
+project = MJS AND issuetype = Bug AND status = "New ticket" AND priority = Blocker;262;2
+project = MJS AND issuetype = Bug AND status = "New ticket" AND priority = Critical;263;2
+project = MJS AND issuetype = Bug AND status = "New ticket" AND priority = Major;264;2
+project = MJS AND issuetype = Bug AND status = "New ticket" AND priority = Minor;265;2
+project = MJS AND issuetype = Bug AND status = "New ticket" AND priority = Trivial;266;2
+project = MJS AND issuetype = Bug AND status = "Issue Approval" AND priority = Blocker;262;3
+project = MJS AND issuetype = Bug AND status = "Issue Approval" AND priority = Critical;263;3
+project = MJS AND issuetype = Bug AND status = "Issue Approval" AND priority = Major;264;3
+project = MJS AND issuetype = Bug AND status = "Issue Approval" AND priority = Minor;265;3
+project = MJS AND issuetype = Bug AND status = "Issue Approval" AND priority = Trivial;266;3
+project = MJS AND issuetype = Bug AND status = Open AND priority = Blocker;262;4
+project = MJS AND issuetype = Bug AND status = Open AND priority = Critical;263;4
+project = MJS AND issuetype = Bug AND status = Open AND priority = Major;264;4
+project = MJS AND issuetype = Bug AND status = Open AND priority = Minor;265;4
+project = MJS AND issuetype = Bug AND status = Open AND priority = Trivial;266;4
+project = MJS AND issuetype = Bug AND status = Reopened AND priority = Blocker;262;5
+project = MJS AND issuetype = Bug AND status = Reopened AND priority = Critical;263;5
+project = MJS AND issuetype = Bug AND status = Reopened AND priority = Major;264;5
+project = MJS AND issuetype = Bug AND status = Reopened AND priority = Minor;265;5
+project = MJS AND issuetype = Bug AND status = Reopened AND priority = Trivial;266;5
+project = MJS AND issuetype = Bug AND status = "In Progress" AND priority = Blocker;262;6
+project = MJS AND issuetype = Bug AND status = "In Progress" AND priority = Critical;263;6
+project = MJS AND issuetype = Bug AND status = "In Progress" AND priority = Major;264;6
+project = MJS AND issuetype = Bug AND status = "In Progress" AND priority = Minor;265;6
+project = MJS AND issuetype = Bug AND status = "In Progress" AND priority = Trivial;266;6
+project = MJS AND issuetype = Bug AND status = "Request for input" AND priority = Blocker;262;7
+project = MJS AND issuetype = Bug AND status = "Request for input" AND priority = Critical;263;7
+project = MJS AND issuetype = Bug AND status = "Request for input" AND priority = Major;264;7
+project = MJS AND issuetype = Bug AND status = "Request for input" AND priority = Minor;265;7
+project = MJS AND issuetype = Bug AND status = "Request for input" AND priority = Trivial;266;7
+project = MJS AND issuetype = Bug AND status = Review AND priority = Blocker;262;8
+project = MJS AND issuetype = Bug AND status = Review AND priority = Critical;263;8
+project = MJS AND issuetype = Bug AND status = Review AND priority = Major;264;8
+project = MJS AND issuetype = Bug AND status = Review AND priority = Minor;265;8
+project = MJS AND issuetype = Bug AND status = Review AND priority = Trivial;266;8
+project = MJS AND issuetype = Bug AND status = "Ready for Build" AND priority = Blocker;262;9
+project = MJS AND issuetype = Bug AND status = "Ready for Build" AND priority = Critical;263;9
+project = MJS AND issuetype = Bug AND status = "Ready for Build" AND priority = Major;264;9
+project = MJS AND issuetype = Bug AND status = "Ready for Build" AND priority = Minor;265;9
+project = MJS AND issuetype = Bug AND status = "Ready for Build" AND priority = Trivial;266;9
+project = MJS AND issuetype = Bug AND status = "Pragiti QA" AND priority = Blocker;262;10
+project = MJS AND issuetype = Bug AND status = "Pragiti QA" AND priority = Critical;263;10
+project = MJS AND issuetype = Bug AND status = "Pragiti QA" AND priority = Major;264;10
+project = MJS AND issuetype = Bug AND status = "Pragiti QA" AND priority = Minor;265;10
+project = MJS AND issuetype = Bug AND status = "Pragiti QA" AND priority = Trivial;266;10
+project = MJS AND issuetype = Bug AND status = "Customer QA" AND priority = Blocker;262;11
+project = MJS AND issuetype = Bug AND status = "Customer QA" AND priority = Critical;263;11
+project = MJS AND issuetype = Bug AND status = "Customer QA" AND priority = Major;264;11
+project = MJS AND issuetype = Bug AND status = "Customer QA" AND priority = Minor;265;11
+project = MJS AND issuetype = Bug AND status = "Customer QA" AND priority = Trivial;266;11
+project = MJS AND issuetype = Bug AND status = Resolved AND priority = Blocker;262;12
+project = MJS AND issuetype = Bug AND status = Resolved AND priority = Critical;263;12
+project = MJS AND issuetype = Bug AND status = Resolved AND priority = Major;264;12
+project = MJS AND issuetype = Bug AND status = Resolved AND priority = Minor;265;12
+project = MJS AND issuetype = Bug AND status = Resolved AND priority = Trivial;266;12
+project = MJS AND issuetype = Bug AND status = Invalid AND priority = Blocker;262;13
+project = MJS AND issuetype = Bug AND status = Invalid AND priority = Critical;263;13
+project = MJS AND issuetype = Bug AND status = Invalid AND priority = Major;264;13
+project = MJS AND issuetype = Bug AND status = Invalid AND priority = Minor;265;13
+project = MJS AND issuetype = Bug AND status = Invalid AND priority = Trivial;266;13
+project = MJS AND issuetype = Bug AND status = Blocked AND priority = Blocker;262;14
+project = MJS AND issuetype = Bug AND status = Blocked AND priority = Critical;263;14
+project = MJS AND issuetype = Bug AND status = Blocked AND priority = Major;264;14
+project = MJS AND issuetype = Bug AND status = Blocked AND priority = Minor;265;14
+project = MJS AND issuetype = Bug AND status = Blocked AND priority = Trivial;266;14

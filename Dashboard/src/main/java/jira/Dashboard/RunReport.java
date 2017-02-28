@@ -14,8 +14,8 @@ import java.io.UnsupportedEncodingException;
 public class RunReport
 {
 	private static final String JIRA_CONFIG = "PragitiJira.properties";
-	private static final String BUGREPORTWORKBOOK = "E:/Cloud Shares/Box Sync/Box Sync/PQG - Shared Resources/WSR/Template/test2/WSR - Temp_02152017.xlsx";
-	private static final String CURRENT_DT = "15-Feb";
+	private static final String BUGREPORTWORKBOOK = "E:\\Cloud Shares\\Box Sync\\Box Sync\\PQG - Shared Resources\\WSR\\00archive\\Deliverables\\02232017\\QA WSR_02272017.xlsx";
+	private static final String CURRENT_DT = "27-Feb";
 
 	/**
 	 * @param args
@@ -39,8 +39,13 @@ public class RunReport
 		ExecutionTrendCreator.createTrendReport("ARSTL_ExecutionTrend.properties", BUGREPORTWORKBOOK, JIRA_CONFIG, CURRENT_DT);
 
 		//MJ Dev
+		BugReportCreator.createBugReport("MJDev_Bug_Dashboard_Config.csv", BUGREPORTWORKBOOK, "Project Dashboard", JIRA_CONFIG);
+		ExecutionTrendCreator.createTrendReport("MJDev_ExecutionTrend.properties", BUGREPORTWORKBOOK, JIRA_CONFIG, CURRENT_DT);
+
 
 		//MJ Sustenance
+		BugReportCreator.createBugReport("MJS_Bug_Dashboard_Config.csv", BUGREPORTWORKBOOK, "Project Dashboard", JIRA_CONFIG);
+		ExecutionTrendCreator.createTrendReport("MJS_ExecutionTrend.properties", BUGREPORTWORKBOOK, JIRA_CONFIG, CURRENT_DT);
 
 		//Shimano Sustenance
 		BugReportCreator.createBugReport("SB2CS_Bug_Dashboard_Config.csv", BUGREPORTWORKBOOK, "Project Dashboard", JIRA_CONFIG);
