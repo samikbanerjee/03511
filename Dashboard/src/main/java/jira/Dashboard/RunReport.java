@@ -14,8 +14,9 @@ import java.io.UnsupportedEncodingException;
 public class RunReport
 {
 	private static final String JIRA_CONFIG = "PragitiJira.properties";
-	private static final String BUGREPORTWORKBOOK = "E:\\Cloud Shares\\Box Sync\\Box Sync\\PQG - Shared Resources\\WSR\\00archive\\Deliverables\\02232017\\QA WSR_02272017.xlsx";
-	private static final String CURRENT_DT = "27-Feb";
+	private static final String BUGREPORTWORKBOOK = "E:\\Cloud Shares\\Box Sync\\Box Sync\\PQG - Shared Resources\\WSR\\00archive\\Deliverables"
+			+ "\\03232017\\QA WSR_03272017.xlsx";
+	private static final String CURRENT_DT = "27-Mar";
 
 	/**
 	 * @param args
@@ -54,6 +55,8 @@ public class RunReport
 		//Solstice
 		BugReportCreator.createBugReport("SOL_Bug_Dashboard_Config.csv", BUGREPORTWORKBOOK, "Project Dashboard", JIRA_CONFIG);
 		ExecutionTrendCreator.createTrendReport("SOL_ExecutionTrend.properties", BUGREPORTWORKBOOK, JIRA_CONFIG, CURRENT_DT);
+
+		System.out.println("-----Done Writing------");
 
 	}
 

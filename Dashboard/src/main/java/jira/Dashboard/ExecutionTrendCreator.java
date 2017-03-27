@@ -51,7 +51,7 @@ public class ExecutionTrendCreator
 
 		//Find out Rows and cols to Write
 		final int getStartRow = Integer.parseInt(prop.getPropertyValue("workbooksheet.startRow"));
-		final int getStartColumn = getEmptyCell(getStartRow, sheet);
+		final int getStartColumn = getEmptyCell((getStartRow + 1), sheet);//go to next row and search for the first empty field
 
 		//Update Date Field
 		sheet.getRow(getStartRow).getCell(getStartColumn).setCellValue(currentDT);

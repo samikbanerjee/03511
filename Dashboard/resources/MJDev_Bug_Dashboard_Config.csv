@@ -3,11 +3,11 @@ project = MJB2CDEV AND issuetype = Bug AND status = "New ticket" AND priority = 
 project = MJB2CDEV AND issuetype = Bug AND status = "New ticket" AND priority = Major;206;2
 project = MJB2CDEV AND issuetype = Bug AND status = "New ticket" AND priority = Minor;207;2
 project = MJB2CDEV AND issuetype = Bug AND status = "New ticket" AND priority = Trivial;208;2
-project = MJB2CDEV AND issuetype = Bug AND status = "Issue Approval" AND priority = Blocker;204;3
-project = MJB2CDEV AND issuetype = Bug AND status = "Issue Approval" AND priority = Critical;205;3
-project = MJB2CDEV AND issuetype = Bug AND status = "Issue Approval" AND priority = Major;206;3
-project = MJB2CDEV AND issuetype = Bug AND status = "Issue Approval" AND priority = Minor;207;3
-project = MJB2CDEV AND issuetype = Bug AND status = "Issue Approval" AND priority = Trivial;208;3
+project = MJB2CDEV AND issuetype = Bug AND status = "Awaiting Details" AND priority = Blocker;204;3
+project = MJB2CDEV AND issuetype = Bug AND status = "Awaiting Details" AND priority = Critical;205;3
+project = MJB2CDEV AND issuetype = Bug AND status = "Awaiting Details" AND priority = Major;206;3
+project = MJB2CDEV AND issuetype = Bug AND status = "Awaiting Details" AND priority = Minor;207;3
+project = MJB2CDEV AND issuetype = Bug AND status = "Awaiting Details" AND priority = Trivial;208;3
 project = MJB2CDEV AND issuetype = Bug AND status = Open AND priority = Blocker;204;4
 project = MJB2CDEV AND issuetype = Bug AND status = Open AND priority = Critical;205;4
 project = MJB2CDEV AND issuetype = Bug AND status = Open AND priority = Major;206;4
@@ -43,11 +43,11 @@ project = MJB2CDEV AND issuetype = Bug AND status = "Pragiti QA" AND priority = 
 project = MJB2CDEV AND issuetype = Bug AND status = "Pragiti QA" AND priority = Major;206;10
 project = MJB2CDEV AND issuetype = Bug AND status = "Pragiti QA" AND priority = Minor;207;10
 project = MJB2CDEV AND issuetype = Bug AND status = "Pragiti QA" AND priority = Trivial;208;10
-project = MJB2CDEV AND issuetype = Bug AND status = "Customer QA" AND priority = Blocker;204;11
-project = MJB2CDEV AND issuetype = Bug AND status = "Customer QA" AND priority = Critical;205;11
-project = MJB2CDEV AND issuetype = Bug AND status = "Customer QA" AND priority = Major;206;11
-project = MJB2CDEV AND issuetype = Bug AND status = "Customer QA" AND priority = Minor;207;11
-project = MJB2CDEV AND issuetype = Bug AND status = "Customer QA" AND priority = Trivial;208;11
+project = MJB2CDEV AND issuetype = Bug AND status IN ("Customer QA","Ready for Prod") AND priority = Blocker;204;11
+project = MJB2CDEV AND issuetype = Bug AND status IN ("Customer QA","Ready for Prod") AND priority = Critical;205;11
+project = MJB2CDEV AND issuetype = Bug AND status IN ("Customer QA","Ready for Prod") AND priority = Major;206;11
+project = MJB2CDEV AND issuetype = Bug AND status IN ("Customer QA","Ready for Prod") AND priority = Minor;207;11
+project = MJB2CDEV AND issuetype = Bug AND status IN ("Customer QA","Ready for Prod") AND priority = Trivial;208;11
 project = MJB2CDEV AND issuetype = Bug AND status = Resolved AND priority = Blocker;204;12
 project = MJB2CDEV AND issuetype = Bug AND status = Resolved AND priority = Critical;205;12
 project = MJB2CDEV AND issuetype = Bug AND status = Resolved AND priority = Major;206;12
