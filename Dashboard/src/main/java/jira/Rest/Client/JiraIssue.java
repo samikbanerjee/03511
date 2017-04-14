@@ -1,7 +1,5 @@
 package jira.Rest.Client;
 
-import java.io.IOException;
-
 import com.jayway.restassured.path.json.JsonPath;
 
 
@@ -25,9 +23,8 @@ public class JiraIssue
 	/**
 	 * @param jSonResponseOfjql
 	 * @param issueNum
-	 * @throws IOException
 	 */
-	public JiraIssue(final String jSonResponseOfjql, final int issueNum) throws IOException
+	public JiraIssue(final String jSonResponseOfjql, final int issueNum)
 	{
 		this.n = issueNum;
 		setIssueType(jSonResponseOfjql);

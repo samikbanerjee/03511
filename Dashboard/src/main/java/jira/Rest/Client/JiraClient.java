@@ -3,6 +3,8 @@ package jira.Rest.Client;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
+import java.util.ArrayList;
+import java.util.List;
 
 import com.jayway.restassured.RestAssured;
 import com.jayway.restassured.path.json.JsonPath;
@@ -20,6 +22,7 @@ public class JiraClient
 	private String userName;
 	private String passWord;
 	private String restAccessUrl;
+	private String restAccessUrlFullIssues;
 	PropertyReader config;
 
 	/**
@@ -87,6 +90,26 @@ public class JiraClient
 
 
 	/**
+	 * @return the restAccessUrlFullIssues
+	 */
+	public String getRestAccessUrlFullIssues()
+	{
+		this.setRestAccessUrlFullIssues();
+		return restAccessUrlFullIssues;
+	}
+
+	/**
+	 *
+	 * the restAccessUrlFullIssues to set (returns full issues {costly})
+	 */
+	public void setRestAccessUrlFullIssues()
+	{
+		this.restAccessUrlFullIssues = config.getPropertyValue("jira.url.rest")
+				+ config.getPropertyValue("jira.url.rest.searchIssues");
+	}
+
+
+	/**
 	 * @return Rest Assured authenticated request specification
 	 */
 	public RequestSpecification authenticated()
@@ -97,11 +120,39 @@ public class JiraClient
 
 	/**
 	 * @param issueAccessEndPoint
+	 * @param fetchFullIssues
+	 *           (false = just get the issue count of the jql ; true = get all the issue details {costly})
 	 * @return response body
 	 */
-	public Response getRestResponse(final String issueAccessEndPoint)
+	public Response getRestResponse(final String issueAccessEndPoint, final boolean fetchFullIssues)
 	{
-		return this.authenticated().get(getRestAccessUrl() + issueAccessEndPoint);
+		if (fetchFullIssues == false)
+		{
+			return this.authenticated().get(getRestAccessUrl() + issueAccessEndPoint);
+		}
+		else
+		{
+			return this.authenticated().get(getRestAccessUrlFullIssues() + issueAccessEndPoint);
+		}
+
+	}
+
+
+	/**
+	 * @param jql
+	 * @return List of Jira Issues (as defined) - {High Cost Query}
+	 */
+	public List<JiraIssue> getJiraIssues(final String jql)
+	{
+		final List<JiraIssue> jiraIssues = new ArrayList<JiraIssue>();
+		final String resp = getRestResponse(jql, true).asString();
+		final int totalIssues = JsonPath.from(resp).getInt("total");
+		for (int i = 0; i < totalIssues; i++)
+		{
+			final JiraIssue ji = new JiraIssue(resp, i);
+			jiraIssues.add(ji);
+		}
+		return jiraIssues;
 	}
 
 	/**
@@ -110,7 +161,7 @@ public class JiraClient
 	 */
 	public int getIssueCount(final String jql)
 	{
-		final String resp = this.getRestResponse(jql).asString();
+		final String resp = this.getRestResponse(jql, false).asString();
 		return JsonPath.from(resp).getInt("total");
 	}
 
@@ -124,4 +175,6 @@ public class JiraClient
 		final String encodedUrl = URLEncoder.encode(jql, "UTF-8");
 		return config.getPropertyValue("jira.url.search") + encodedUrl;
 	}
+
+
 }
