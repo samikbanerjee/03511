@@ -5,20 +5,22 @@ import java.io.IOException;
 import com.jayway.restassured.path.json.JsonPath;
 
 
+
+
 /**
  *
  */
 public class JiraIssue
 {
-	private final String IssueType;
-	private final String Key;
-	private final String Summary;
-	private final String Assignee;
-	private final String Reporter;
-	private final String Priority;
-	private final String Status;
+	private String IssueType;
+	private String Key;
+	private String Summary;
+	private String Assignee;
+	private String Reporter;
+	private String Priority;
+	private String Status;
+	private double StoryPoint;
 	private final int n;
-
 
 	/**
 	 * @param jSonResponseOfjql
@@ -28,16 +30,15 @@ public class JiraIssue
 	public JiraIssue(final String jSonResponseOfjql, final int issueNum) throws IOException
 	{
 		this.n = issueNum;
-		IssueType = JsonPath.from(jSonResponseOfjql).get("issues[" + n + "].fields.issuetype.name").toString();
-		Key = JsonPath.from(jSonResponseOfjql).get("issues[" + n + "].key").toString();
-		Summary = JsonPath.from(jSonResponseOfjql).get("issues[" + n + "].fields.summary").toString();
-		Assignee = JsonPath.from(jSonResponseOfjql).get("issues[" + n + "].fields.assignee.name").toString();
-		Reporter = JsonPath.from(jSonResponseOfjql).get("issues[" + n + "].fields.reporter.name").toString();
-		Priority = JsonPath.from(jSonResponseOfjql).get("issues[" + n + "].fields.priority.name").toString();
-		Status = JsonPath.from(jSonResponseOfjql).get("issues[" + n + "].fields.status.name").toString();
+		setIssueType(jSonResponseOfjql);
+		setKey(jSonResponseOfjql);
+		setSummary(jSonResponseOfjql);
+		setAssignee(jSonResponseOfjql);
+		setReporter(jSonResponseOfjql);
+		setPriority(jSonResponseOfjql);
+		setStatus(jSonResponseOfjql);
+		setStoryPoint(jSonResponseOfjql);
 	}
-
-
 
 	/**
 	 * @return the issueType
@@ -47,6 +48,16 @@ public class JiraIssue
 		return IssueType;
 	}
 
+
+	/**
+	 * @param jSonResponseOfjql
+	 */
+	public void setIssueType(final String jSonResponseOfjql)
+	{
+		IssueType = checkJsonpathNotNull(jSonResponseOfjql, "issues[" + n + "].fields.issuetype.name", "IssueType Not Found");
+	}
+
+
 	/**
 	 * @return the key
 	 */
@@ -54,6 +65,16 @@ public class JiraIssue
 	{
 		return Key;
 	}
+
+
+	/**
+	 * @param jSonResponseOfjql
+	 */
+	public void setKey(final String jSonResponseOfjql)
+	{
+		Key = checkJsonpathNotNull(jSonResponseOfjql, "issues[" + n + "].key", "Key Not Found");
+	}
+
 
 	/**
 	 * @return the summary
@@ -65,11 +86,29 @@ public class JiraIssue
 
 
 	/**
+	 * @param jSonResponseOfjql
+	 */
+	public void setSummary(final String jSonResponseOfjql)
+	{
+		Summary = checkJsonpathNotNull(jSonResponseOfjql, "issues[" + n + "].fields.summary", "Summary Not Found");
+	}
+
+
+	/**
 	 * @return the assignee
 	 */
 	public String getAssignee()
 	{
 		return Assignee;
+	}
+
+
+	/**
+	 * @param jSonResponseOfjql
+	 */
+	public void setAssignee(final String jSonResponseOfjql)
+	{
+		Assignee = checkJsonpathNotNull(jSonResponseOfjql, "issues[" + n + "].fields.assignee.name", "Assignee Not Found");
 	}
 
 	/**
@@ -79,6 +118,16 @@ public class JiraIssue
 	{
 		return Reporter;
 	}
+
+
+	/**
+	 * @param jSonResponseOfjql
+	 */
+	public void setReporter(final String jSonResponseOfjql)
+	{
+		Reporter = checkJsonpathNotNull(jSonResponseOfjql, "issues[" + n + "].fields.reporter.name", "Reporter Not Found");
+	}
+
 
 	/**
 	 * @return the priority
@@ -90,6 +139,16 @@ public class JiraIssue
 
 
 	/**
+	 * @param jSonResponseOfjql
+	 *           the priority to set
+	 */
+	public void setPriority(final String jSonResponseOfjql)
+	{
+		Priority = checkJsonpathNotNull(jSonResponseOfjql, "issues[" + n + "].fields.priority.name", "Priority Not Found");
+	}
+
+
+	/**
 	 * @return the status
 	 */
 	public String getStatus()
@@ -97,4 +156,49 @@ public class JiraIssue
 		return Status;
 	}
 
+
+	/**
+	 * @param jSonResponseOfjql
+	 *           the status to set
+	 */
+	public void setStatus(final String jSonResponseOfjql)
+	{
+		Status = checkJsonpathNotNull(jSonResponseOfjql, "issues[" + n + "].fields.status.name", "Status Not found");
+	}
+
+
+	/**
+	 * @return the storyPoint
+	 */
+	public double getStoryPoint()
+	{
+		return StoryPoint;
+	}
+
+
+	/**
+	 * @param jSonResponseOfjql
+	 *           the storyPoint to set
+	 */
+	public void setStoryPoint(final String jSonResponseOfjql)
+	{
+		final String temp = checkJsonpathNotNull(jSonResponseOfjql, "issues[" + n + "].fields.customfield_10004", "0");
+		StoryPoint = Double.parseDouble(temp);
+	}
+
+	private String checkJsonpathNotNull(final String jSonResponseOfjql, final String jsonPathToCheck,
+			final String defaultValueIfNull)
+	{
+		if (JsonPath.from(jSonResponseOfjql).get(jsonPathToCheck) == null)
+		{
+			return defaultValueIfNull;
+		}
+		else
+		{
+			return JsonPath.from(jSonResponseOfjql).get(jsonPathToCheck).toString();
+		}
+
+
+
+	}
 }

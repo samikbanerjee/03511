@@ -15,8 +15,8 @@ public class RunReport
 {
 	private static final String JIRA_CONFIG = "PragitiJira.properties";
 	private static final String BUGREPORTWORKBOOK = "E:\\Cloud Shares\\Box Sync\\Box Sync\\PQG - Shared Resources\\WSR\\00archive\\Deliverables"
-			+ "\\03232017\\QA WSR_03272017.xlsx";
-	private static final String CURRENT_DT = "27-Mar";
+			+ "\\04102017\\QA WSR_04102017.xlsx";
+	private static final String CURRENT_DT = "10-Apr";
 
 	/**
 	 * @param args

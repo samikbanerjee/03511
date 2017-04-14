@@ -12,6 +12,10 @@ import com.jayway.restassured.path.json.JsonPath;
  */
 public class AdHocQry
 {
+	/**
+	 * @param args
+	 * @throws IOException
+	 */
 	public static void main(final String[] args) throws IOException
 	{
 		//		final String JQL = "project = SB2CS AND priority = Blocker AND status in (Open, \"In Progress\", Reopened, \"Request for input\", Blocked, Review, \"New ticket\", \"Issue Approval\", \"Ready for Build\", \"Pragiti QA\") AND priority = Blocker";
