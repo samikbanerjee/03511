@@ -1,0 +1,33 @@
+JBS;project in (MJB2CG, MJB2BG, ZLB2CG) AND issuetype = Story AND status = "New ticket" AND updated >= -7d;15;3
+JBS;project in (MJB2CG, MJB2BG, ZLB2CG) AND issuetype = Story AND status in (Open, Reopened) AND updated >= -7d;15;4
+JBS;project in (MJB2CG, MJB2BG, ZLB2CG) AND issuetype = Story AND status = "In Progress" AND updated >= -7d;15;5
+JBS;project in (MJB2CG, MJB2BG, ZLB2CG) AND issuetype = Story AND status = "Request for input" AND updated >= -7d;15;6
+JBS;project in (MJB2CG, MJB2BG, ZLB2CG) AND issuetype = Story AND status = Blocked AND updated >= -7d;15;7
+JBS;project in (MJB2CG, MJB2BG, ZLB2CG) AND issuetype = Story AND status = Review AND updated>= -7d;15;8
+JBS;project in (MJB2CG, MJB2BG, ZLB2CG) AND issuetype = Story AND status = "Ready for Build" AND updated >= -7d;15;9
+JBS;project in (MJB2CG, MJB2BG, ZLB2CG) AND issuetype = Story AND status = "Pragiti QA" AND updated >= -7d;15;10
+JBS;project in (MJB2CG, MJB2BG, ZLB2CG) AND issuetype = Story AND status = "Customer QA" AND updated >= -7d;15;11
+JBS;project in (MJB2CG, MJB2BG, ZLB2CG) AND issuetype = Story AND status = Resolved AND updated >= -7d;15;12
+JBS;project in (MJB2CG, MJB2BG, ZLB2CG) AND issuetype = Bug AND status = "New ticket" AND updated >= -7d;17;3
+JBS;project in (MJB2CG, MJB2BG, ZLB2CG) AND issuetype = Bug AND status in (Open, Reopened) AND updated >= -7d;17;4
+JBS;project in (MJB2CG, MJB2BG, ZLB2CG) AND issuetype = Bug AND status = "In Progress" AND updated >= -7d;17;5
+JBS;project in (MJB2CG, MJB2BG, ZLB2CG) AND issuetype = Bug AND status = "Request for input" AND updated >= -7d;17;6
+JBS;project in (MJB2CG, MJB2BG, ZLB2CG) AND issuetype = Bug AND status = Blocked AND updated >= -7d;17;7
+JBS;project in (MJB2CG, MJB2BG, ZLB2CG) AND issuetype = Bug AND status = Review AND updated>= -7d;17;8
+JBS;project in (MJB2CG, MJB2BG, ZLB2CG) AND issuetype = Bug AND status = "Ready for Build" AND updated >= -7d;17;9
+JBS;project in (MJB2CG, MJB2BG, ZLB2CG) AND issuetype = Bug AND status = "Pragiti QA" AND updated >= -7d;17;10
+JBS;project in (MJB2CG, MJB2BG, ZLB2CG) AND issuetype = Bug AND status = "Customer QA" AND updated >= -7d;17;11
+JBS;project in (MJB2CG, MJB2BG, ZLB2CG) AND issuetype = Bug AND status = Resolved AND updated >= -7d;17;12
+DBS;project in (MJB2CG, MJB2BG, ZLB2CG) AND issuetype = Bug AND status in (Open, "In Progress", Reopened, "Request for input", Blocked, Review, "New ticket", "Ready for Build", "Awaiting Details") AND priority = Blocker;13;17
+DBS;project in (MJB2CG, MJB2BG, ZLB2CG) AND issuetype = Bug AND status in (Open, "In Progress", Reopened, "Request for input", Blocked, Review, "New ticket", "Ready for Build", "Awaiting Details") AND priority = Critical;14;17
+DBS;project in (MJB2CG, MJB2BG, ZLB2CG) AND issuetype = Bug AND status in (Open, "In Progress", Reopened, "Request for input", Blocked, Review, "New ticket", "Ready for Build", "Awaiting Details") AND priority = Major;15;17
+DBS;project in (MJB2CG, MJB2BG, ZLB2CG) AND issuetype = Bug AND status in (Open, "In Progress", Reopened, "Request for input", Blocked, Review, "New ticket", "Ready for Build", "Awaiting Details") AND priority = Minor;16;17
+DBS;project in (MJB2CG, MJB2BG, ZLB2CG) AND issuetype = Bug AND status in (Open, "In Progress", Reopened, "Request for input", Blocked, Review, "New ticket", "Ready for Build", "Awaiting Details") AND priority = Trivial;17;17
+DDTD;project in (MJB2CG, MJB2BG, ZLB2CG) AND issuetype = Bug;31;1
+DDTD;project in (MJB2CG, MJB2BG, ZLB2CG) AND issuetype in (Improvement, "New Feature", Story) AND status in (Resolved, "Ready for Prod", "Pragiti QA", "Customer QA");32;1
+RTD;project in (MJB2CG, MJB2BG, ZLB2CG) AND status changed TO "Reopened" ;39;1
+RTD;project in (MJB2CG, MJB2BG, ZLB2CG) AND status changed from "Pragiti QA" ;40;1
+VT;project in (MJB2CG, MJB2BG, ZLB2CG) AND Sprint in (334, 335);23;3
+VT;project in (MJB2CG, MJB2BG, ZLB2CG) AND status in (Resolved, "Ready for Prod", "Pragiti QA", "Customer QA") AND Sprint in (334, 335);24;3
+VT;project in (MJB2CG, MJB2BG, ZLB2CG) AND Sprint in (345, 344);23;4
+VT;project in (MJB2CG, MJB2BG, ZLB2CG) AND status in (Resolved, "Ready for Prod", "Pragiti QA", "Customer QA") AND Sprint in (345, 344);24;4

@@ -23,6 +23,7 @@ public class JiraClient
 	private String passWord;
 	private String restAccessUrl;
 	private String restAccessUrlFullIssues;
+	private String restAccessUrlCustomField;
 	PropertyReader config;
 
 	/**
@@ -110,6 +111,26 @@ public class JiraClient
 
 
 	/**
+	 * @param customField
+	 * @return restAccessUrlCustomField
+	 */
+	public String getRestAccessUrlCustomField(final String customField)
+	{
+		this.setRestAccessUrlCustomField(customField);
+		return restAccessUrlCustomField;
+	}
+
+
+	/**
+	 * @param customField
+	 */
+	public void setRestAccessUrlCustomField(final String customField)
+	{
+		this.restAccessUrlCustomField = config.getPropertyValue("jira.url.rest") + "search?fields=" + customField
+				+ "&maxResults=1000&jql=";
+	}
+
+	/**
 	 * @return Rest Assured authenticated request specification
 	 */
 	public RequestSpecification authenticated()
@@ -137,6 +158,16 @@ public class JiraClient
 
 	}
 
+	/**
+	 * @param issueAccessEndPoint
+	 * @param customField
+	 * @return response body with just the requested custom field
+	 */
+	public Response getRestResponseCustomField(final String issueAccessEndPoint, final String customField)
+	{
+		return this.authenticated().get(getRestAccessUrlCustomField(customField) + issueAccessEndPoint);
+	}
+
 
 	/**
 	 * @param jql
@@ -149,7 +180,34 @@ public class JiraClient
 		final int totalIssues = JsonPath.from(resp).getInt("total");
 		for (int i = 0; i < totalIssues; i++)
 		{
-			final JiraIssue ji = new JiraIssue(resp, i);
+			final JiraIssue ji = new JiraIssue(i);
+			ji.setAssignee(resp);
+			ji.setIssueType(resp);
+			ji.setKey(resp);
+			ji.setPriority(resp);
+			ji.setReporter(resp);
+			ji.setStatus(resp);
+			ji.setSummary(resp);
+			jiraIssues.add(ji);
+		}
+		return jiraIssues;
+	}
+
+	/**
+	 * @param jql
+	 * @param customField
+	 * @param jsonPathFromFields
+	 * @return List of Jira Issues (only for the requested custom field) - {High Cost Query}
+	 */
+	public List<JiraIssue> getJiraIssuesCustomField(final String jql, final String customField, final String jsonPathFromFields)
+	{
+		final List<JiraIssue> jiraIssues = new ArrayList<JiraIssue>();
+		final String resp = getRestResponseCustomField(jql, customField).asString();
+		final int totalIssues = JsonPath.from(resp).getInt("total");
+		for (int i = 0; i < totalIssues; i++)
+		{
+			final JiraIssue ji = new JiraIssue(i);
+			ji.setCustomfield(resp, jsonPathFromFields);
 			jiraIssues.add(ji);
 		}
 		return jiraIssues;

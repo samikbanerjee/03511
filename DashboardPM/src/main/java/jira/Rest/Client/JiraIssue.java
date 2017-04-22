@@ -17,24 +17,15 @@ public class JiraIssue
 	private String Reporter;
 	private String Priority;
 	private String Status;
-	private double StoryPoint;
+	private String customfield;
 	private final int n;
 
 	/**
-	 * @param jSonResponseOfjql
 	 * @param issueNum
 	 */
-	public JiraIssue(final String jSonResponseOfjql, final int issueNum)
+	public JiraIssue(final int issueNum)
 	{
 		this.n = issueNum;
-		setIssueType(jSonResponseOfjql);
-		setKey(jSonResponseOfjql);
-		setSummary(jSonResponseOfjql);
-		setAssignee(jSonResponseOfjql);
-		setReporter(jSonResponseOfjql);
-		setPriority(jSonResponseOfjql);
-		setStatus(jSonResponseOfjql);
-		setStoryPoint(jSonResponseOfjql);
 	}
 
 	/**
@@ -163,25 +154,25 @@ public class JiraIssue
 		Status = checkJsonpathNotNull(jSonResponseOfjql, "issues[" + n + "].fields.status.name", "Status Not found");
 	}
 
-
 	/**
-	 * @return the storyPoint
+	 * @return the customfield
 	 */
-	public double getStoryPoint()
+	public String getCustomfield()
 	{
-		return StoryPoint;
+		return customfield;
 	}
-
 
 	/**
 	 * @param jSonResponseOfjql
-	 *           the storyPoint to set
+	 * @param jsonPathFromFields
 	 */
-	public void setStoryPoint(final String jSonResponseOfjql)
+	public void setCustomfield(final String jSonResponseOfjql, final String jsonPathFromFields)
 	{
-		final String temp = checkJsonpathNotNull(jSonResponseOfjql, "issues[" + n + "].fields.customfield_10004", "0");
-		StoryPoint = Double.parseDouble(temp);
+		customfield = checkJsonpathNotNull(jSonResponseOfjql, "issues[" + n + "]." + jsonPathFromFields, "Not Found");
 	}
+
+
+
 
 	private String checkJsonpathNotNull(final String jSonResponseOfjql, final String jsonPathToCheck,
 			final String defaultValueIfNull)
@@ -198,4 +189,6 @@ public class JiraIssue
 
 
 	}
+
+
 }
