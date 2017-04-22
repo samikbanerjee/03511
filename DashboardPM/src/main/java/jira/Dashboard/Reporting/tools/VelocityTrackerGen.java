@@ -9,6 +9,8 @@ import java.util.List;
 import jira.Rest.Client.JiraClient;
 import jira.Rest.Client.JiraIssue;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 
@@ -18,7 +20,7 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
  */
 public class VelocityTrackerGen
 {
-
+	private static Logger log = LogManager.getLogger();
 	private static final String customField = "customfield_10004";
 	private static final String jsonPathFromFields = "fields.customfield_10004";
 
@@ -41,7 +43,7 @@ public class VelocityTrackerGen
 			final int i = queryObject.getPositionX() - 1;
 			final int j = queryObject.getPositionY() - 1;
 
-			System.out.println("Working on :" + jql);
+			log.info("Working on :" + jql);
 
 			final List<JiraIssue> jiraIssues = jc.getJiraIssuesCustomField(jql, customField, jsonPathFromFields);
 			double sp = 0.0;
@@ -63,7 +65,7 @@ public class VelocityTrackerGen
 
 			final Cell cl = sheet.getRow(i).getCell(j);
 			cl.setCellValue(sp);
-			System.out.println("Calculated Story Points for :" + jql);
+			log.info("Calculated Story Points for :" + jql);
 
 		}
 

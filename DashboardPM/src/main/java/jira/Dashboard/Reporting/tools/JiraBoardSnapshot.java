@@ -8,6 +8,8 @@ import java.util.List;
 
 import jira.Rest.Client.JiraClient;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.apache.poi.ss.usermodel.CellCopyPolicy;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -18,6 +20,8 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
  */
 public class JiraBoardSnapshot
 {
+	private static Logger log = LogManager.getLogger();
+
 	/**
 	 * @param sheet
 	 * @param jc
@@ -39,7 +43,7 @@ public class JiraBoardSnapshot
 			final XSSFCell tgtCell = sheet.getRow(previousWeekRow).getCell(previousWeekCol);
 			tgtCell.copyCellFrom(srcCell, new CellCopyPolicy());
 		}
-		System.out.println("Completed copying 'current week data' to 'previous week data'");
+		log.info("Completed copying 'current week data' to 'previous week data'");
 
 
 		//Populate - current week

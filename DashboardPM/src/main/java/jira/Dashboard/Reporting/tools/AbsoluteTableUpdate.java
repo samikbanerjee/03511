@@ -5,6 +5,8 @@ import java.util.List;
 
 import jira.Rest.Client.JiraClient;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 
@@ -14,6 +16,8 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
  */
 public class AbsoluteTableUpdate
 {
+	private static Logger log = LogManager.getLogger();
+
 	/**
 	 * @param sheet
 	 * @param jc
@@ -31,7 +35,7 @@ public class AbsoluteTableUpdate
 			final int i = qo.getPositionX() - 1;
 			final int j = qo.getPositionY() - 1;
 			final String jql = qo.getJql();
-			System.out.println("Working on : " + jql);
+			log.info("Working on : " + jql);
 			final int count = jc.getIssueCount(jql);
 			final Cell cell = sheet.getRow(i).getCell(j);
 			cell.setCellValue(count);

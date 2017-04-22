@@ -12,18 +12,25 @@ import jira.Dashboard.Reporting.tools.QueryObject;
 import jira.Dashboard.Reporting.tools.VelocityTrackerGen;
 import jira.Rest.Client.JiraClient;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 
 
 /**
  *
  */
-public class AdHocQry
+public class ExecuteReportGeneration
 {
+
+	private static Logger log = LogManager.getLogger();
+
 	/**
 	 * @param args
 	 * @throws IOException
 	 */
+
+
 	public static void main(final String[] args) throws IOException
 	{
 		final String workBook = "E:\\Cloud Shares\\Box Sync\\Box Sync\\PMO WSR Auto\\WSR Template _Test.xlsx";
@@ -51,30 +58,30 @@ public class AdHocQry
 		final XSSFSheet sheet = xl.getSheet();
 
 		//Write Report
-		System.out.println("Starting work on: Jira Board Snapshot");
+		log.info("Starting work on: Jira Board Snapshot");
 		JiraBoardSnapshot.populateJiraBoard(sheet, jc, queryObjectsJBS);
-		System.out.println("Completed: Jira Board Snapshot");
+		log.info("Completed: Jira Board Snapshot");
 
-		System.out.println("Starting work on: Defects By Severity");
+		log.info("Starting work on: Defects By Severity");
 		AbsoluteTableUpdate.populateAbsoluteTable(sheet, jc, queryObjectsDBS);
-		System.out.println("Completed: Defects By Severity");
+		log.info("Completed: Defects By Severity");
 
-		System.out.println("Starting work on : Defect Density");
+		log.info("Starting work on : Defect Density");
 		CumultiveTableUpdate.populateCumultiveTable(sheet, jc, queryObjectsDDTD);
-		System.out.println("Completed : Defect Density");
+		log.info("Completed : Defect Density");
 
-		System.out.println("Starting work on : Reopens To Date");
+		log.info("Starting work on : Reopens To Date");
 		CumultiveTableUpdate.populateCumultiveTable(sheet, jc, queryObjectsRTD);
-		System.out.println("Completed : Reopens To Date");
+		log.info("Completed : Reopens To Date");
 
-		System.out.println("Starting work on: Velocity Tracker");
+		log.info("Starting work on: Velocity Tracker");
 		VelocityTrackerGen.populateSprintVelocities(sheet, jc, queryObjectsVT);
-		System.out.println("Completed : Velocity Tracker");
+		log.info("Completed : Velocity Tracker");
 
 		//Write to excel
 		xl.writeToSheetAndClose();
 
-		System.out.println("Completed Writing Report");
+		log.info("Completed Writing Report");
 	}
 }
 
