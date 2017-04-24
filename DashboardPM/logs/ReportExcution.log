@@ -1,0 +1,3 @@
+2017-04-23 20:36:28.508 [main] INFO  jira.Dashboard.ExecuteReportGeneration - Starting work on: Jira Board Snapshot
+2017-04-23 20:36:28.521 [main] INFO  jira.Dashboard.Reporting.tools.JiraBoardSnapshot - Completed copying 'current week data' to 'previous week data'
+2017-04-23 20:36:28.522 [main] INFO  jira.Dashboard.Reporting.tools.AbsoluteTableUpdate - Working on : project in (MJB2CG, MJB2BG, ZLB2CG) AND issuetype = Story AND status = "New ticket" AND updated >= -7d

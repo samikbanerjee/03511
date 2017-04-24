@@ -1,6 +1,8 @@
 package jira.Rest.Client;
 
+import java.io.FileReader;
 import java.io.IOException;
+import java.io.Reader;
 import java.util.Properties;
 
 
@@ -18,7 +20,8 @@ public class PropertyReader
 	public PropertyReader(final String propertiesFile) throws IOException
 	{
 		prop = new Properties();
-		prop.load(PropertyReader.class.getClassLoader().getResourceAsStream(propertiesFile));
+		final Reader reader = new FileReader(System.getProperty("user.dir") + "/resources/" + propertiesFile);
+		prop.load(reader);
 	}
 
 	/**
