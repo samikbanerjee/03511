@@ -3,7 +3,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="resources"/>
 	<classpathentry kind="src" path="logging"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
 	<classpathentry kind="lib" path="TestFrameworkLibs/Automation_Libs-0.0.2-SNAPSHOT.jar"/>
 	<classpathentry kind="lib" path="TestFrameworkLibs/cglib-nodep-2.1_3.jar"/>
 	<classpathentry kind="lib" path="TestFrameworkLibs/commons-codec-1.9.jar"/>
@@ -55,5 +54,6 @@
 	<classpathentry kind="lib" path="TestFrameworkLibs/xmlbeans-2.6.0.jar"/>
 	<classpathentry kind="lib" path="TestFrameworkLibs/apache-log4j-2.3-bin/apache-log4j-2.3-bin/log4j-api-2.3.jar"/>
 	<classpathentry kind="lib" path="TestFrameworkLibs/apache-log4j-2.3-bin/apache-log4j-2.3-bin/log4j-core-2.3.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
