@@ -15,8 +15,8 @@ public class RunReport
 {
 	private static final String JIRA_CONFIG = "PragitiJira.properties";
 	private static final String BUGREPORTWORKBOOK = "E:\\Cloud Shares\\Box Sync\\Box Sync\\PQG - Shared Resources\\WSR\\00archive\\Deliverables"
-			+ "\\04172017\\QA WSR_04172017.xlsx";
-	private static final String CURRENT_DT = "17-Apr";
+			+ "\\05252017\\QA WSR.xlsx";
+	private static final String CURRENT_DT = "29-May";
 
 	/**
 	 * @param args
@@ -39,10 +39,17 @@ public class RunReport
 		BugReportCreator.createBugReport("ARSTL_Bug_Dashboard_Config.csv", BUGREPORTWORKBOOK, "Project Dashboard", JIRA_CONFIG);
 		ExecutionTrendCreator.createTrendReport("ARSTL_ExecutionTrend.properties", BUGREPORTWORKBOOK, JIRA_CONFIG, CURRENT_DT);
 
-		//MJ Dev
-		BugReportCreator.createBugReport("MJDev_Bug_Dashboard_Config.csv", BUGREPORTWORKBOOK, "Project Dashboard", JIRA_CONFIG);
-		ExecutionTrendCreator.createTrendReport("MJDev_ExecutionTrend.properties", BUGREPORTWORKBOOK, JIRA_CONFIG, CURRENT_DT);
+		//MJ Dev - B2C
+		BugReportCreator.createBugReport("MJDev_B2C_Bug_Dashboard_Config.csv", BUGREPORTWORKBOOK, "Project Dashboard", JIRA_CONFIG);
+		ExecutionTrendCreator.createTrendReport("MJDev_B2C_ExecutionTrend.properties", BUGREPORTWORKBOOK, JIRA_CONFIG, CURRENT_DT);
 
+		//MJ Dev - B2B
+		BugReportCreator.createBugReport("MJDev_B2B_Bug_Dashboard_Config.csv", BUGREPORTWORKBOOK, "Project Dashboard", JIRA_CONFIG);
+		ExecutionTrendCreator.createTrendReport("MJDev_B2B_ExecutionTrend.properties", BUGREPORTWORKBOOK, JIRA_CONFIG, CURRENT_DT);
+
+		//MJ Dev - ZO
+		BugReportCreator.createBugReport("MJDev_ZO_Bug_Dashboard_Config.csv", BUGREPORTWORKBOOK, "Project Dashboard", JIRA_CONFIG);
+		ExecutionTrendCreator.createTrendReport("MJDev_ZO_ExecutionTrend.properties", BUGREPORTWORKBOOK, JIRA_CONFIG, CURRENT_DT);
 
 		//MJ Sustenance
 		BugReportCreator.createBugReport("MJS_Bug_Dashboard_Config.csv", BUGREPORTWORKBOOK, "Project Dashboard", JIRA_CONFIG);

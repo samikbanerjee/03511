@@ -114,9 +114,10 @@ public class JiraClient
 	 */
 	public RequestSpecification authenticated()
 	{
-		return RestAssured.given().auth().preemptive().basic(getUserName(), getPassWord());
-	}
 
+		return RestAssured.given().auth().preemptive().basic(getUserName(), getPassWord());
+
+	}
 
 	/**
 	 * @param issueAccessEndPoint
@@ -126,6 +127,8 @@ public class JiraClient
 	 */
 	public Response getRestResponse(final String issueAccessEndPoint, final boolean fetchFullIssues)
 	{
+
+
 		if (fetchFullIssues == false)
 		{
 			return this.authenticated().get(getRestAccessUrl() + issueAccessEndPoint);

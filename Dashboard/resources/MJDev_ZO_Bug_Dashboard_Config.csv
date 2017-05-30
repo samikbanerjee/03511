@@ -1,0 +1,65 @@
+project = ZLB2CG AND issuetype = Bug AND status = "New ticket" AND priority = Blocker;494;2
+project = ZLB2CG AND issuetype = Bug AND status = "New ticket" AND priority = Critical;495;2
+project = ZLB2CG AND issuetype = Bug AND status = "New ticket" AND priority = Major;496;2
+project = ZLB2CG AND issuetype = Bug AND status = "New ticket" AND priority = Minor;497;2
+project = ZLB2CG AND issuetype = Bug AND status = "New ticket" AND priority = Trivial;498;2
+project = ZLB2CG AND issuetype = Bug AND status = "Awaiting Details" AND priority = Blocker;494;3
+project = ZLB2CG AND issuetype = Bug AND status = "Awaiting Details" AND priority = Critical;495;3
+project = ZLB2CG AND issuetype = Bug AND status = "Awaiting Details" AND priority = Major;496;3
+project = ZLB2CG AND issuetype = Bug AND status = "Awaiting Details" AND priority = Minor;497;3
+project = ZLB2CG AND issuetype = Bug AND status = "Awaiting Details" AND priority = Trivial;498;3
+project = ZLB2CG AND issuetype = Bug AND status = Open AND priority = Blocker;494;4
+project = ZLB2CG AND issuetype = Bug AND status = Open AND priority = Critical;495;4
+project = ZLB2CG AND issuetype = Bug AND status = Open AND priority = Major;496;4
+project = ZLB2CG AND issuetype = Bug AND status = Open AND priority = Minor;497;4
+project = ZLB2CG AND issuetype = Bug AND status = Open AND priority = Trivial;498;4
+project = ZLB2CG AND issuetype = Bug AND status = Reopened AND priority = Blocker;494;5
+project = ZLB2CG AND issuetype = Bug AND status = Reopened AND priority = Critical;495;5
+project = ZLB2CG AND issuetype = Bug AND status = Reopened AND priority = Major;496;5
+project = ZLB2CG AND issuetype = Bug AND status = Reopened AND priority = Minor;497;5
+project = ZLB2CG AND issuetype = Bug AND status = Reopened AND priority = Trivial;498;5
+project = ZLB2CG AND issuetype = Bug AND status = "In Progress" AND priority = Blocker;494;6
+project = ZLB2CG AND issuetype = Bug AND status = "In Progress" AND priority = Critical;495;6
+project = ZLB2CG AND issuetype = Bug AND status = "In Progress" AND priority = Major;496;6
+project = ZLB2CG AND issuetype = Bug AND status = "In Progress" AND priority = Minor;497;6
+project = ZLB2CG AND issuetype = Bug AND status = "In Progress" AND priority = Trivial;498;6
+project = ZLB2CG AND issuetype = Bug AND status = "Request for input" AND priority = Blocker;494;7
+project = ZLB2CG AND issuetype = Bug AND status = "Request for input" AND priority = Critical;495;7
+project = ZLB2CG AND issuetype = Bug AND status = "Request for input" AND priority = Major;496;7
+project = ZLB2CG AND issuetype = Bug AND status = "Request for input" AND priority = Minor;497;7
+project = ZLB2CG AND issuetype = Bug AND status = "Request for input" AND priority = Trivial;498;7
+project = ZLB2CG AND issuetype = Bug AND status = Review AND priority = Blocker;494;8
+project = ZLB2CG AND issuetype = Bug AND status = Review AND priority = Critical;495;8
+project = ZLB2CG AND issuetype = Bug AND status = Review AND priority = Major;496;8
+project = ZLB2CG AND issuetype = Bug AND status = Review AND priority = Minor;497;8
+project = ZLB2CG AND issuetype = Bug AND status = Review AND priority = Trivial;498;8
+project = ZLB2CG AND issuetype = Bug AND status = "Ready for Build" AND priority = Blocker;494;9
+project = ZLB2CG AND issuetype = Bug AND status = "Ready for Build" AND priority = Critical;495;9
+project = ZLB2CG AND issuetype = Bug AND status = "Ready for Build" AND priority = Major;496;9
+project = ZLB2CG AND issuetype = Bug AND status = "Ready for Build" AND priority = Minor;497;9
+project = ZLB2CG AND issuetype = Bug AND status = "Ready for Build" AND priority = Trivial;498;9
+project = ZLB2CG AND issuetype = Bug AND status = "Pragiti QA" AND priority = Blocker;494;10
+project = ZLB2CG AND issuetype = Bug AND status = "Pragiti QA" AND priority = Critical;495;10
+project = ZLB2CG AND issuetype = Bug AND status = "Pragiti QA" AND priority = Major;496;10
+project = ZLB2CG AND issuetype = Bug AND status = "Pragiti QA" AND priority = Minor;497;10
+project = ZLB2CG AND issuetype = Bug AND status = "Pragiti QA" AND priority = Trivial;498;10
+project = ZLB2CG AND issuetype = Bug AND status IN ("Customer QA","Ready for Prod") AND priority = Blocker;494;11
+project = ZLB2CG AND issuetype = Bug AND status IN ("Customer QA","Ready for Prod") AND priority = Critical;495;11
+project = ZLB2CG AND issuetype = Bug AND status IN ("Customer QA","Ready for Prod") AND priority = Major;496;11
+project = ZLB2CG AND issuetype = Bug AND status IN ("Customer QA","Ready for Prod") AND priority = Minor;497;11
+project = ZLB2CG AND issuetype = Bug AND status IN ("Customer QA","Ready for Prod") AND priority = Trivial;498;11
+project = ZLB2CG AND issuetype = Bug AND status = Resolved AND priority = Blocker;494;12
+project = ZLB2CG AND issuetype = Bug AND status = Resolved AND priority = Critical;495;12
+project = ZLB2CG AND issuetype = Bug AND status = Resolved AND priority = Major;496;12
+project = ZLB2CG AND issuetype = Bug AND status = Resolved AND priority = Minor;497;12
+project = ZLB2CG AND issuetype = Bug AND status = Resolved AND priority = Trivial;498;12
+project = ZLB2CG AND issuetype = Bug AND status = Invalid AND priority = Blocker;494;13
+project = ZLB2CG AND issuetype = Bug AND status = Invalid AND priority = Critical;495;13
+project = ZLB2CG AND issuetype = Bug AND status = Invalid AND priority = Major;496;13
+project = ZLB2CG AND issuetype = Bug AND status = Invalid AND priority = Minor;497;13
+project = ZLB2CG AND issuetype = Bug AND status = Invalid AND priority = Trivial;498;13
+project = ZLB2CG AND issuetype = Bug AND status = Blocked AND priority = Blocker;494;14
+project = ZLB2CG AND issuetype = Bug AND status = Blocked AND priority = Critical;495;14
+project = ZLB2CG AND issuetype = Bug AND status = Blocked AND priority = Major;496;14
+project = ZLB2CG AND issuetype = Bug AND status = Blocked AND priority = Minor;497;14
+project = ZLB2CG AND issuetype = Bug AND status = Blocked AND priority = Trivial;498;14

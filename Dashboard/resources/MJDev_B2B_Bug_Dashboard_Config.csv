@@ -1,0 +1,65 @@
+project = MJB2BG AND issuetype = Bug AND status = "New ticket" AND priority = Blocker;436;2
+project = MJB2BG AND issuetype = Bug AND status = "New ticket" AND priority = Critical;437;2
+project = MJB2BG AND issuetype = Bug AND status = "New ticket" AND priority = Major;438;2
+project = MJB2BG AND issuetype = Bug AND status = "New ticket" AND priority = Minor;439;2
+project = MJB2BG AND issuetype = Bug AND status = "New ticket" AND priority = Trivial;440;2
+project = MJB2BG AND issuetype = Bug AND status = "Awaiting Details" AND priority = Blocker;436;3
+project = MJB2BG AND issuetype = Bug AND status = "Awaiting Details" AND priority = Critical;437;3
+project = MJB2BG AND issuetype = Bug AND status = "Awaiting Details" AND priority = Major;438;3
+project = MJB2BG AND issuetype = Bug AND status = "Awaiting Details" AND priority = Minor;439;3
+project = MJB2BG AND issuetype = Bug AND status = "Awaiting Details" AND priority = Trivial;440;3
+project = MJB2BG AND issuetype = Bug AND status = Open AND priority = Blocker;436;4
+project = MJB2BG AND issuetype = Bug AND status = Open AND priority = Critical;437;4
+project = MJB2BG AND issuetype = Bug AND status = Open AND priority = Major;438;4
+project = MJB2BG AND issuetype = Bug AND status = Open AND priority = Minor;439;4
+project = MJB2BG AND issuetype = Bug AND status = Open AND priority = Trivial;440;4
+project = MJB2BG AND issuetype = Bug AND status = Reopened AND priority = Blocker;436;5
+project = MJB2BG AND issuetype = Bug AND status = Reopened AND priority = Critical;437;5
+project = MJB2BG AND issuetype = Bug AND status = Reopened AND priority = Major;438;5
+project = MJB2BG AND issuetype = Bug AND status = Reopened AND priority = Minor;439;5
+project = MJB2BG AND issuetype = Bug AND status = Reopened AND priority = Trivial;440;5
+project = MJB2BG AND issuetype = Bug AND status = "In Progress" AND priority = Blocker;436;6
+project = MJB2BG AND issuetype = Bug AND status = "In Progress" AND priority = Critical;437;6
+project = MJB2BG AND issuetype = Bug AND status = "In Progress" AND priority = Major;438;6
+project = MJB2BG AND issuetype = Bug AND status = "In Progress" AND priority = Minor;439;6
+project = MJB2BG AND issuetype = Bug AND status = "In Progress" AND priority = Trivial;440;6
+project = MJB2BG AND issuetype = Bug AND status = "Request for input" AND priority = Blocker;436;7
+project = MJB2BG AND issuetype = Bug AND status = "Request for input" AND priority = Critical;437;7
+project = MJB2BG AND issuetype = Bug AND status = "Request for input" AND priority = Major;438;7
+project = MJB2BG AND issuetype = Bug AND status = "Request for input" AND priority = Minor;439;7
+project = MJB2BG AND issuetype = Bug AND status = "Request for input" AND priority = Trivial;440;7
+project = MJB2BG AND issuetype = Bug AND status = Review AND priority = Blocker;436;8
+project = MJB2BG AND issuetype = Bug AND status = Review AND priority = Critical;437;8
+project = MJB2BG AND issuetype = Bug AND status = Review AND priority = Major;438;8
+project = MJB2BG AND issuetype = Bug AND status = Review AND priority = Minor;439;8
+project = MJB2BG AND issuetype = Bug AND status = Review AND priority = Trivial;440;8
+project = MJB2BG AND issuetype = Bug AND status = "Ready for Build" AND priority = Blocker;436;9
+project = MJB2BG AND issuetype = Bug AND status = "Ready for Build" AND priority = Critical;437;9
+project = MJB2BG AND issuetype = Bug AND status = "Ready for Build" AND priority = Major;438;9
+project = MJB2BG AND issuetype = Bug AND status = "Ready for Build" AND priority = Minor;439;9
+project = MJB2BG AND issuetype = Bug AND status = "Ready for Build" AND priority = Trivial;440;9
+project = MJB2BG AND issuetype = Bug AND status = "Pragiti QA" AND priority = Blocker;436;10
+project = MJB2BG AND issuetype = Bug AND status = "Pragiti QA" AND priority = Critical;437;10
+project = MJB2BG AND issuetype = Bug AND status = "Pragiti QA" AND priority = Major;438;10
+project = MJB2BG AND issuetype = Bug AND status = "Pragiti QA" AND priority = Minor;439;10
+project = MJB2BG AND issuetype = Bug AND status = "Pragiti QA" AND priority = Trivial;440;10
+project = MJB2BG AND issuetype = Bug AND status IN ("Customer QA","Ready for Prod") AND priority = Blocker;436;11
+project = MJB2BG AND issuetype = Bug AND status IN ("Customer QA","Ready for Prod") AND priority = Critical;437;11
+project = MJB2BG AND issuetype = Bug AND status IN ("Customer QA","Ready for Prod") AND priority = Major;438;11
+project = MJB2BG AND issuetype = Bug AND status IN ("Customer QA","Ready for Prod") AND priority = Minor;439;11
+project = MJB2BG AND issuetype = Bug AND status IN ("Customer QA","Ready for Prod") AND priority = Trivial;440;11
+project = MJB2BG AND issuetype = Bug AND status = Resolved AND priority = Blocker;436;12
+project = MJB2BG AND issuetype = Bug AND status = Resolved AND priority = Critical;437;12
+project = MJB2BG AND issuetype = Bug AND status = Resolved AND priority = Major;438;12
+project = MJB2BG AND issuetype = Bug AND status = Resolved AND priority = Minor;439;12
+project = MJB2BG AND issuetype = Bug AND status = Resolved AND priority = Trivial;440;12
+project = MJB2BG AND issuetype = Bug AND status = Invalid AND priority = Blocker;436;13
+project = MJB2BG AND issuetype = Bug AND status = Invalid AND priority = Critical;437;13
+project = MJB2BG AND issuetype = Bug AND status = Invalid AND priority = Major;438;13
+project = MJB2BG AND issuetype = Bug AND status = Invalid AND priority = Minor;439;13
+project = MJB2BG AND issuetype = Bug AND status = Invalid AND priority = Trivial;440;13
+project = MJB2BG AND issuetype = Bug AND status = Blocked AND priority = Blocker;436;14
+project = MJB2BG AND issuetype = Bug AND status = Blocked AND priority = Critical;437;14
+project = MJB2BG AND issuetype = Bug AND status = Blocked AND priority = Major;438;14
+project = MJB2BG AND issuetype = Bug AND status = Blocked AND priority = Minor;439;14
+project = MJB2BG AND issuetype = Bug AND status = Blocked AND priority = Trivial;440;14
