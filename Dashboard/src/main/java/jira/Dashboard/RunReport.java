@@ -7,16 +7,17 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 
+import jira.Rest.Client.PropertyReader;
+
+
 
 /**
  *
  */
 public class RunReport
 {
-	private static final String JIRA_CONFIG = "PragitiJira.properties";
-	private static final String BUGREPORTWORKBOOK = "E:\\Cloud Shares\\Box Sync\\Box Sync\\PQG - Shared Resources\\WSR\\00archive\\Deliverables"
-			+ "\\05252017\\QA WSR.xlsx";
-	private static final String CURRENT_DT = "29-May";
+	private static final String JIRA_CONFIG = "base.properties";
+
 
 	/**
 	 * @param args
@@ -26,6 +27,9 @@ public class RunReport
 	 */
 	public static void main(final String[] args) throws FileNotFoundException, UnsupportedEncodingException, IOException
 	{
+		final PropertyReader prop = new PropertyReader(JIRA_CONFIG);
+		final String BUGREPORTWORKBOOK = prop.getPropertyValue("report.execution.workbook");
+		final String CURRENT_DT = prop.getPropertyValue("report.execution.date");
 
 		//For NVI
 		BugReportCreator.createBugReport("NVI_Bug_Dashboard_Config.csv", BUGREPORTWORKBOOK, "Project Dashboard", JIRA_CONFIG);
