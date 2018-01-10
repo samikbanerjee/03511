@@ -1,13 +1,10 @@
 package mjb2c.us.checkout;
 
-import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.*;
 
 import static org.junit.Assert.*;
-import static org.hamcrest.CoreMatchers.*;
-
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -15,7 +12,9 @@ import org.openqa.selenium.support.ui.Select;
 public class MJB2CGuestCheckoutVerifyBillingPage {
   private WebDriver driver;
   private String baseUrl;
+  @SuppressWarnings("unused")
   private boolean acceptNextAlert = true;
+  @SuppressWarnings("unused")
   private StringBuffer verificationErrors = new StringBuffer();
 
   @Before

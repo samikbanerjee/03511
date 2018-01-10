@@ -18,7 +18,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import testFramework.tools.DataReaderServices.ReadProperties;
 
 
-@SuppressWarnings("javadoc")
+
 public class MyAccountLogIn
 {
 	private WebDriver driver;

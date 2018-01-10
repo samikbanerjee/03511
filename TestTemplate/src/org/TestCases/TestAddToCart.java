@@ -35,7 +35,6 @@ public class TestAddToCart
 	private final StringBuffer verificationErrors = new StringBuffer();
 	private ReadProperties rdr;
 
-	@SuppressWarnings("javadoc")
 	@Before
 	public void setUp() throws Exception
 	{

@@ -4,7 +4,7 @@ package org.jdbc.world.countryDAO;
  * @author samik
  */
 
-@SuppressWarnings("javadoc")
+
 public enum CountrySearchParams
 {
 

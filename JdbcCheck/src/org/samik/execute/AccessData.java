@@ -5,7 +5,6 @@ import java.util.List;
 import org.samik.dao.JdbcDaoImpl;
 import org.samik.model.CityModel;
 import org.samik.model.CountryLanguageModel;
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 
@@ -19,9 +18,9 @@ public class AccessData
 	 */
 	public static void main(final String[] args)
 	{
-		final ApplicationContext ctx = new ClassPathXmlApplicationContext("spring-data.xml");
+		final ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("spring-data.xml");
 		final JdbcDaoImpl dao = ctx.getBean("jdbcDaoImpl", JdbcDaoImpl.class);
-
+		
 		final CityModel ct1 = dao.getCityById(1024);
 		System.out.println(ct1.getName());
 
@@ -43,9 +42,11 @@ public class AccessData
 			System.out.println(countryLanguageModel.getLanguage() + "--" + countryLanguageModel.getIsOfficial() + "--"
 					+ countryLanguageModel.getPercentage());
 		}
-
-
+		ctx.close();
+	
+		
 	}
-
+	
+	
 
 }

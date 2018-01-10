@@ -28,7 +28,7 @@ public class XLSWriter implements Closeable
 	XSSFWorkbook workBook;
 	XSSFSheet sheet;
 
-	@SuppressWarnings("javadoc")
+	
 	public enum CellProperties
 	{
 		HYPERLINK, COMMENTS

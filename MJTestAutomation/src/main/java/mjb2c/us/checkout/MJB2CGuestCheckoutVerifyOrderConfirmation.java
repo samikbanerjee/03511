@@ -12,6 +12,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class MJB2CGuestCheckoutVerifyOrderConfirmation
 {
+	@SuppressWarnings("unused")
 	private static final String Valid = null;
 
 	public void testMJB2CGuestCheckoutVerifyOrderConfirmation(final WebDriver driver, final String baseUrl) throws Exception

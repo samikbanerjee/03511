@@ -20,7 +20,7 @@ import testFramework.tools.DataReaderServices.ReadProperties;
 import testFramework.tools.WebdriverFunctions.SelectBrowser;
 
 
-@SuppressWarnings("javadoc")
+
 public class TestMyAccount
 {
 

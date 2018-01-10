@@ -11,7 +11,7 @@ import org.samik.model.CityModel;
 /**
  * @author Samik
  */
-@SuppressWarnings("javadoc")
+
 public interface CityDAO
 {
 	/**

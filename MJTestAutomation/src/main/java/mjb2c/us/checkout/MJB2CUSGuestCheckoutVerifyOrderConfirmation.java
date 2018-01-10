@@ -336,6 +336,7 @@ public class MJB2CUSGuestCheckoutVerifyOrderConfirmation
 		}
 	}
 
+	@SuppressWarnings("unused")
 	private boolean isAlertPresent()
 	{
 		try
@@ -349,6 +350,7 @@ public class MJB2CUSGuestCheckoutVerifyOrderConfirmation
 		}
 	}
 
+	@SuppressWarnings("unused")
 	private String closeAlertAndGetItsText()
 	{
 		try
